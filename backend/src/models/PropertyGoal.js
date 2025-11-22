@@ -1,4 +1,5 @@
 // models/PropertyGoal.js
+
 class PropertyGoal {
     constructor({ type, rooms, size, city, basePrice }) {
         this.type = type;  // 'house' or 'apartment'
