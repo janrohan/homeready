@@ -2,6 +2,26 @@
 import { useState, useMemo, useEffect } from "react";
 import avatarImg from "../assets/male_1.png";
 
+// High-level roadmap milestones for the game view
+const roadmapMilestones = [
+  { id: "education", label: "Education" },
+  { id: "career", label: "Career" },
+  { id: "family", label: "Family" },
+  { id: "summary", label: "Summary" },
+];
+
+// Map detailed steps to high-level milestones
+const stepToMilestone = {
+  educationLevel: "education",
+  bachelorProgram: "education",
+  masterOption: "education",
+  apprenticeshipProgram: "education",
+  educationDoneInterlude: "education",
+  jobChoice: "career",
+  childrenChoice: "family",
+  storyEnd: "summary",
+};
+
 // Story configuration
 const storySteps = {
   educationLevel: {
@@ -179,6 +199,12 @@ function Story() {
 
   const step = storySteps[currentStepId];
 
+  const currentMilestoneIndex = useMemo(() => {
+    const milestoneId = stepToMilestone[currentStepId];
+    const idx = roadmapMilestones.findIndex((m) => m.id === milestoneId);
+    return idx === -1 ? 0 : idx;
+  }, [currentStepId]);
+
   async function sendStoryToBackend() {
     try {
       const token = localStorage.getItem("authToken");
@@ -306,17 +332,76 @@ function Story() {
           </span>
           <span className="text-xs text-gray-500">{progressPercent}%</span>
         </div>
-        <div className="w-full bg-gray-100 rounded-full h-2 overflow-hidden">
-          <div
-            className="h-2 bg-[#94d260] transition-all"
-            style={{ width: `${progressPercent}%` }}
-          />
+        <div className="w-full bg-gray-100 rounded-full h-2 overflow-hidden relative">
+  <div
+    className="h-2 bg-gradient-to-r from-[#589eaf] to-[#94d260] transition-all"
+    style={{ width: `${progressPercent}%` }}
+  />
+  <div className="absolute -top-3 left-0 text-[10px] font-semibold text-[#589eaf]">
+    LVL
+  </div>
+</div>
+      </div>
+
+{/* Gamified roadmap */}
+<div className="bg-white rounded-2xl shadow-md px-4 py-3 border border-[#589eaf]/10">
+      <div className="relative">
+        {/* Track line */}
+        <div className="absolute top-1/2 left-0 right-0 h-[2px] bg-gray-200" />
+
+        <div className="relative flex justify-between items-center">
+          {roadmapMilestones.map((milestone, index) => {
+            const isActive = index === currentMilestoneIndex;
+            const isCompleted = index < currentMilestoneIndex;
+
+            return (
+              <div
+                key={milestone.id}
+                className="flex flex-col items-center gap-1 w-20"
+              >
+                {/* Node */}
+                <div
+                  className={[
+                    "relative flex items-center justify-center rounded-full h-8 w-8 border-2 bg-white z-10 transition-transform duration-200",
+    isActive ? "scale-110" : "scale-100",
+                    isActive
+                      ? "border-[#589eaf] shadow-md"
+                      : isCompleted
+                      ? "border-[#94d260]"
+                      : "border-gray-300",
+                  ].join(" ")}
+                >
+                  {isActive ? (
+                    <img
+                      src={avatarImg}
+                      alt="Avatar position"
+                      className="h-7 w-7 rounded-full object-cover"
+                    />
+                  ) : (
+                    <span
+                      className={[
+                        "h-2 w-2 rounded-full",
+                        isCompleted
+                          ? "bg-[#94d260]"
+                          : "bg-gray-300",
+                      ].join(" ")}
+                    />
+                  )}
+                </div>
+                {/* Label */}
+                <span className="text-[11px] text-gray-600 text-center">
+                  {milestone.label}
+                </span>
+              </div>
+            );
+          })}
         </div>
       </div>
+    </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-[2fr,1fr] gap-6">
         {/* Main story card */}
-        <div className="bg-white rounded-2xl shadow-md p-6">
+        <div className="bg-gradient-to-br from-white to-[#f3fafc] rounded-2xl shadow-lg p-6 border border-[#589eaf]/10">
           <h2 className="text-2xl font-bold text-[#589eaf] mb-2">
             {step.title}
           </h2>
@@ -324,27 +409,31 @@ function Story() {
 
           {/* Dynamic or static choice-based step */}
           {step.type !== "info" && (
-            <div className="grid gap-3 md:grid-cols-3">
-              {(step.dynamic ? dynamicOptions : step.options)?.map((option) => (
-                <button
-                  key={option.id}
-                  onClick={() => handleOptionSelect(option.id)}
-                  className="
-                    text-left bg-white border border-gray-200 
-                    rounded-2xl p-4 text-sm 
-                    hover:border-[#589eaf] hover:shadow-md 
-                    transition
-                  "
-                >
-                  <div className="font-medium mb-1">{option.label}</div>
-                  {/* Placeholder for small impact text (later) */}
-                  <p className="text-xs text-gray-500">
-                    Click to follow this path.
-                  </p>
-                </button>
-              ))}
-            </div>
-          )}
+  <div className="grid gap-3 md:grid-cols-3">
+    {(step.dynamic ? dynamicOptions : step.options)?.map((option) => (
+      <button
+        key={option.id}
+        onClick={() => handleOptionSelect(option.id)}
+        className="
+          relative text-left bg-white border border-gray-200 
+          rounded-2xl p-4 text-sm 
+          hover:border-[#589eaf] hover:shadow-lg 
+          hover:-translate-y-1 transform transition
+          flex flex-col gap-1
+        "
+      >
+        <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-[#589eaf]/10 text-[#589eaf] mb-1">
+          Choice
+        </span>
+        <div className="font-medium mb-1">{option.label}</div>
+        {/* Placeholder for small impact text (later) */}
+        <p className="text-xs text-gray-500">
+          Select this path to see how your story evolves.
+        </p>
+      </button>
+    ))}
+  </div>
+)}
 
 {step.type === "info" && (
   <div className="mt-4">
@@ -376,28 +465,22 @@ function Story() {
   </div>
 )}
 
-          {/* Optional: debug block to see current state during development */}
-          <div className="mt-6 p-3 rounded-xl bg-gray-50 border border-dashed border-gray-200 text-xs text-gray-500">
-            <div className="font-semibold mb-1">Your current path (debug)</div>
-            <pre className="whitespace-pre-wrap">
-              {JSON.stringify(storyState, null, 2)}
-            </pre>
-          </div>
+         
         </div>
 
         {/* Avatar fun-fact bubble */}
-        <div className="bg-white rounded-2xl shadow-md p-5 flex flex-col items-center justify-center">
-          <div className="h-24 w-24 rounded-full bg-[#589eaf]/10 flex items-center justify-center mb-4">
-            <img
-              src={avatarImg}
-              alt="Story avatar"
-              className="h-20 w-20 object-cover rounded-full"
-            />
-          </div>
-          <div className="bg-[#589eaf]/10 text-[#589eaf] rounded-2xl px-4 py-3 text-sm text-center">
-            {step.avatarText}
-          </div>
-        </div>
+        <div className="bg-white rounded-2xl shadow-md p-5 flex flex-col items-center justify-center border border-[#589eaf]/10">
+  <div className="h-24 w-24 rounded-full bg-[#589eaf]/10 flex items-center justify-center mb-4">
+    <img
+      src={avatarImg}
+      alt="Story avatar"
+      className="h-20 w-20 object-cover rounded-full"
+    />
+  </div>
+  <div className="bg-[#589eaf]/10 text-[#589eaf] rounded-2xl px-4 py-3 text-sm text-center shadow-inner">
+    {step.avatarText}
+  </div>
+</div>
       </div>
     </div>
   );
