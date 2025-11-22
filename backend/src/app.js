@@ -2,9 +2,19 @@ import express from "express";
 import cors from "cors";
 import routes from "./routes/index.js";
 
+const devOrigins = ['http://localhost:5173']; // Vite default
+
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin: (origin, cb) => {
+    if (!origin) return cb(null, true); // allow curl/postman
+    if (devOrigins.includes(origin) || origin.startsWith('http://192.168.')) return cb(null, true);
+    cb(null, true); // or restrict to known origins
+  },
+  credentials: true
+}));
+
 app.use(express.json());
 
 // all routes go here
