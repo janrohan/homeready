@@ -22,11 +22,11 @@ function LoginPage() {
         headers: {
           "Content-Type": "application/json",
         },
-        // You can send email separately too, but identifier is enough for now
+        // Send `username` (backend expects `username`). Keep `email` too when identifier is an email.
         body: JSON.stringify({
-          identifier,
+          username: identifier,
           password,
-          email: identifier, // optional, useful if identifier is an email for new users
+          email: identifier,
         }),
       });
 
