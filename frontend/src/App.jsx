@@ -1,4 +1,6 @@
+// src/App.jsx
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+
 import AuthLayout from "./layout/AuthLayout.jsx";
 import MainLayout from "./layout/MainLayout.jsx";
 
@@ -6,29 +8,64 @@ import LoginPage from "./pages/LoginPage.jsx";
 import Story from "./pages/Story.jsx";
 import Overview from "./pages/Overview.jsx";
 import KnowledgePage from "./pages/KnowledgePage.jsx";
-
 import AvatarSetup from "./pages/avatarCreation/AvatarSetup.jsx";
 import OnboardingQuestions from "./pages/avatarCreation/OnboardingQuestions.jsx";
 import HouseSelection from "./pages/avatarCreation/HouseSelection.jsx";
+import RegisterPage from "./pages/RegisterPage.jsx";
 
 function App() {
-  const isLoggedIn = true;
-  const isNewUser = false;
+  const token = localStorage.getItem("authToken");
+  const isLoggedIn = !!token;
+
+  const isNewUserStored = localStorage.getItem("isNewUser");
+  const isNewUser = isNewUserStored === "true";
 
   return (
     <BrowserRouter>
       <Routes>
-        {/* Auth-Bereich: Login + Onboarding/Avatar */}
-        <Route element={<AuthLayout />}>
-          <Route path="/login" element={<LoginPage />} />
+        {/* Auth & onboarding, wrapped in AuthLayout */}
+        <Route
+          path="/login"
+          element={
+            <AuthLayout>
+              <LoginPage />
+            </AuthLayout>
+          }
+        />
+        <Route
+  path="/register"
+  element={
+    <AuthLayout>
+      <RegisterPage />
+    </AuthLayout>
+  }
+/>
+        <Route
+          path="/avatar"
+          element={
+            <AuthLayout>
+              <AvatarSetup />
+            </AuthLayout>
+          }
+        />
+        <Route
+          path="/avatar/questions"
+          element={
+            <AuthLayout>
+              <OnboardingQuestions />
+            </AuthLayout>
+          }
+        />
+        <Route
+          path="/avatar/house"
+          element={
+            <AuthLayout>
+              <HouseSelection />
+            </AuthLayout>
+          }
+        />
 
-          {/* Onboarding-Schritte */}
-          <Route path="/avatar" element={<AvatarSetup />} />
-          <Route path="/avatar/questions" element={<OnboardingQuestions />} />
-          <Route path="/avatar/house" element={<HouseSelection />} />
-        </Route>
-
-        {/* Hauptbereich mit Sidebar + 3 Pages */}
+        {/* Main app with sidebar */}
         <Route path="/app" element={<MainLayout />}>
           <Route index element={<Story />} />
           <Route path="story" element={<Story />} />
@@ -36,7 +73,7 @@ function App() {
           <Route path="knowledge" element={<KnowledgePage />} />
         </Route>
 
-        {/* Standard-Weiterleitung */}
+        {/* Default redirect depending on login / onboarding state */}
         <Route
           path="*"
           element={
@@ -47,6 +84,7 @@ function App() {
               : <Navigate to="/app/story" replace />
           }
         />
+        
       </Routes>
     </BrowserRouter>
   );
