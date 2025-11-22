@@ -9,8 +9,7 @@ import Story from "./pages/Story.jsx";
 import Overview from "./pages/Overview.jsx";
 import KnowledgePage from "./pages/KnowledgePage.jsx";
 import AvatarSetup from "./pages/avatarCreation/AvatarSetup.jsx";
-import OnboardingQuestions from "./pages/avatarCreation/OnboardingQuestions.jsx";
-import HouseSelection from "./pages/avatarCreation/HouseSelection.jsx";
+import HandleFinish from "./pages/avatarCreation/HandleFinish.jsx";
 import RegisterPage from "./pages/RegisterPage.jsx";
 
 function App() {
@@ -23,7 +22,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Auth & onboarding, wrapped in AuthLayout */}
+        {/* Auth & onboarding */}
         <Route
           path="/login"
           element={
@@ -32,14 +31,16 @@ function App() {
             </AuthLayout>
           }
         />
+
         <Route
-  path="/register"
-  element={
-    <AuthLayout>
-      <RegisterPage />
-    </AuthLayout>
-  }
-/>
+          path="/register"
+          element={
+            <AuthLayout>
+              <RegisterPage />
+            </AuthLayout>
+          }
+        />
+
         <Route
           path="/avatar"
           element={
@@ -48,24 +49,17 @@ function App() {
             </AuthLayout>
           }
         />
-        <Route
-          path="/avatar/questions"
-          element={
-            <AuthLayout>
-              <OnboardingQuestions />
-            </AuthLayout>
-          }
-        />
+
         <Route
           path="/avatar/house"
           element={
             <AuthLayout>
-              <HouseSelection />
+              <HandleFinish />
             </AuthLayout>
           }
         />
 
-        {/* Main app with sidebar */}
+        {/* Main app */}
         <Route path="/app" element={<MainLayout />}>
           <Route index element={<Story />} />
           <Route path="story" element={<Story />} />
@@ -73,7 +67,7 @@ function App() {
           <Route path="knowledge" element={<KnowledgePage />} />
         </Route>
 
-        {/* Default redirect depending on login / onboarding state */}
+        {/* Default redirect */}
         <Route
           path="*"
           element={
@@ -84,7 +78,6 @@ function App() {
               : <Navigate to="/app/story" replace />
           }
         />
-        
       </Routes>
     </BrowserRouter>
   );
