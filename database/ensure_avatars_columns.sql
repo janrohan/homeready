@@ -11,3 +11,7 @@ ALTER TABLE avatars
 -- Optionally set defaults for existing rows (uncomment to run)
 -- UPDATE avatars SET education_level = 'none' WHERE education_level IS NULL;
 -- UPDATE avatars SET education_field = 'none' WHERE education_field IS NULL;
+
+-- Ensure `debt` exists (some older DBs may be missing this column)
+ALTER TABLE avatars
+    ADD COLUMN IF NOT EXISTS debt INT DEFAULT 0;
