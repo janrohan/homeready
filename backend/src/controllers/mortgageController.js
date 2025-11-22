@@ -6,9 +6,27 @@ export const getMortgagePrediction = async (req, res) => {
 
     const prediction = await requestPrediction(avatarInput);
 
-    res.json({
+    const years = prediction.years_to_readiness;
+
+    let message;
+    let feasible;
+
+    if (years >= 40) {
+      feasible = false;
+      message =
+        "Based on your current situation and savings, reaching mortgage readiness may not be realistic without major changes.";
+    } else {
+      feasible = true;
+      message = `You could be mortgage-ready in approximately ${years.toFixed(
+        1
+      )} years.`;
+    }
+
+    return res.json({
       success: true,
-      prediction: prediction.years_to_readiness
+      years_to_readiness: years,
+      feasible,
+      message,
     });
 
   } catch (err) {

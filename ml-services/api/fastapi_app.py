@@ -3,9 +3,18 @@ from pydantic import BaseModel
 import joblib
 import numpy as np
 import pandas as pd
+from pathlib import Path
 
 # load model & preprocessor
-model = joblib.load("ml-services/models/mortgage_model.pkl")
+
+
+
+ROOT = Path(__file__).resolve().parents[2]   # go from api/ → ml-services/ → project root
+MODEL_PATH = ROOT / "ml-services" / "models" / "mortgage_model.pkl"
+
+print("Loading model from:", MODEL_PATH)
+
+model = joblib.load(MODEL_PATH)
 
 app = FastAPI(title="ML Mortgage Prediction API")
 
