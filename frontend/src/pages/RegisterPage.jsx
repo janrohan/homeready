@@ -70,9 +70,12 @@ function RegisterPage() {
   }
 
   return (
-    <div>
-      <h2 className="text-xl font-bold mb-4">Create your account</h2>
-      <p className="text-sm text-slate-600 mb-6">
+    <div className="bg-white rounded-2xl shadow-md p-6">
+      <h2 className="text-3xl font-bold mb-4 text-[#589eaf]">
+        Create your account
+      </h2>
+
+      <p className="text-sm text-gray-600 mb-6">
         Start your journey towards owning a home.
       </p>
 
@@ -83,7 +86,7 @@ function RegisterPage() {
           </label>
           <input
             type="text"
-            className="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-slate-900"
+            className="w-full border border-gray-300 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#589eaf] transition"
             placeholder="choose a username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
@@ -98,7 +101,7 @@ function RegisterPage() {
           </label>
           <input
             type="email"
-            className="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-slate-900"
+            className="w-full border border-gray-300 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#589eaf] transition"
             placeholder="you@example.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -112,7 +115,7 @@ function RegisterPage() {
           </label>
           <input
             type="password"
-            className="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-slate-900"
+            className="w-full border border-gray-300 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#589eaf] transition"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
@@ -126,7 +129,7 @@ function RegisterPage() {
           </label>
           <input
             type="password"
-            className="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-slate-900"
+            className="w-full border border-gray-300 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#589eaf] transition"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
             required
@@ -143,17 +146,17 @@ function RegisterPage() {
         <button
           type="submit"
           disabled={isLoading}
-          className="w-full bg-slate-900 text-white rounded-lg py-2 text-sm font-medium disabled:opacity-60"
+          className="w-full bg-[#589eaf] text-white rounded-xl py-2.5 text-sm font-medium shadow-sm hover:bg-[#4c8b99] transition disabled:opacity-60"
         >
           {isLoading ? "Creating account..." : "Sign up"}
         </button>
       </form>
 
-      <p className="mt-4 text-xs text-slate-600 text-center">
+      <p className="mt-4 text-xs text-gray-600 text-center">
         Already have an account?{" "}
         <button
           type="button"
-          className="text-slate-900 underline"
+          className="text-[#589eaf] underline"
           onClick={() => navigate("/login")}
         >
           Log in
