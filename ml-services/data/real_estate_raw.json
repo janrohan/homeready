@@ -1,0 +1,3402 @@
+[
+  {
+    "id": "fake-385174",
+    "title": "Sample Apartment",
+    "buyingPrice": 640528,
+    "pricePerSqm": 6536,
+    "squareMeter": 98,
+    "region": "NW",
+    "apartmentType": "Maisonette",
+    "rooms": 2,
+    "constructionYear": 1982,
+    "energyEfficiencyClass": "B",
+    "active": true,
+    "locationFactor": {
+      "population": 458646,
+      "unemploymentRate": 9.2
+    }
+  },
+  {
+    "id": "fake-537839",
+    "title": "Sample Apartment",
+    "buyingPrice": 234346,
+    "pricePerSqm": 6167,
+    "squareMeter": 38,
+    "region": "BY",
+    "apartmentType": "Loft",
+    "rooms": 2,
+    "constructionYear": 1968,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 712827,
+      "unemploymentRate": 9.1
+    }
+  },
+  {
+    "id": "fake-372329",
+    "title": "Sample Apartment",
+    "buyingPrice": 221116,
+    "pricePerSqm": 4172,
+    "squareMeter": 53,
+    "region": "HH",
+    "apartmentType": "Apartment",
+    "rooms": 1,
+    "constructionYear": 1988,
+    "energyEfficiencyClass": "G",
+    "active": true,
+    "locationFactor": {
+      "population": 2058929,
+      "unemploymentRate": 2.2
+    }
+  },
+  {
+    "id": "fake-684217",
+    "title": "Sample Apartment",
+    "buyingPrice": 333216,
+    "pricePerSqm": 2848,
+    "squareMeter": 117,
+    "region": "HE",
+    "apartmentType": "Loft",
+    "rooms": 1,
+    "constructionYear": 1997,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 2936588,
+      "unemploymentRate": 6.5
+    }
+  },
+  {
+    "id": "fake-629776",
+    "title": "Sample Apartment",
+    "buyingPrice": 556270,
+    "pricePerSqm": 10114,
+    "squareMeter": 55,
+    "region": "BW",
+    "apartmentType": "Penthouse",
+    "rooms": 5,
+    "constructionYear": 1954,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 1829138,
+      "unemploymentRate": 8.7
+    }
+  },
+  {
+    "id": "fake-293985",
+    "title": "Sample Apartment",
+    "buyingPrice": 674829,
+    "pricePerSqm": 6957,
+    "squareMeter": 97,
+    "region": "HH",
+    "apartmentType": "Penthouse",
+    "rooms": 1,
+    "constructionYear": 1974,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 2751582,
+      "unemploymentRate": 2.2
+    }
+  },
+  {
+    "id": "fake-815941",
+    "title": "Sample Apartment",
+    "buyingPrice": 842219,
+    "pricePerSqm": 10661,
+    "squareMeter": 79,
+    "region": "NW",
+    "apartmentType": "Apartment",
+    "rooms": 3,
+    "constructionYear": 2015,
+    "energyEfficiencyClass": "C",
+    "active": true,
+    "locationFactor": {
+      "population": 653013,
+      "unemploymentRate": 8.4
+    }
+  },
+  {
+    "id": "fake-680242",
+    "title": "Sample Apartment",
+    "buyingPrice": 191607,
+    "pricePerSqm": 4913,
+    "squareMeter": 39,
+    "region": "HH",
+    "apartmentType": "Penthouse",
+    "rooms": 1,
+    "constructionYear": 1990,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 1932301,
+      "unemploymentRate": 7.2
+    }
+  },
+  {
+    "id": "fake-874008",
+    "title": "Sample Apartment",
+    "buyingPrice": 187572,
+    "pricePerSqm": 6468,
+    "squareMeter": 29,
+    "region": "BW",
+    "apartmentType": "Maisonette",
+    "rooms": 3,
+    "constructionYear": 1952,
+    "energyEfficiencyClass": "G",
+    "active": true,
+    "locationFactor": {
+      "population": 1128864,
+      "unemploymentRate": 5.9
+    }
+  },
+  {
+    "id": "fake-361598",
+    "title": "Sample Apartment",
+    "buyingPrice": 481797,
+    "pricePerSqm": 7191,
+    "squareMeter": 67,
+    "region": "HE",
+    "apartmentType": "Apartment",
+    "rooms": 1,
+    "constructionYear": 1988,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 1725378,
+      "unemploymentRate": 6.6
+    }
+  },
+  {
+    "id": "fake-237005",
+    "title": "Sample Apartment",
+    "buyingPrice": 126945,
+    "pricePerSqm": 2821,
+    "squareMeter": 45,
+    "region": "BY",
+    "apartmentType": "Maisonette",
+    "rooms": 5,
+    "constructionYear": 1959,
+    "energyEfficiencyClass": "A",
+    "active": true,
+    "locationFactor": {
+      "population": 1392898,
+      "unemploymentRate": 3.5
+    }
+  },
+  {
+    "id": "fake-994101",
+    "title": "Sample Apartment",
+    "buyingPrice": 221256,
+    "pricePerSqm": 6146,
+    "squareMeter": 36,
+    "region": "HE",
+    "apartmentType": "Maisonette",
+    "rooms": 5,
+    "constructionYear": 2005,
+    "energyEfficiencyClass": "C",
+    "active": true,
+    "locationFactor": {
+      "population": 997530,
+      "unemploymentRate": 3.4
+    }
+  },
+  {
+    "id": "fake-157582",
+    "title": "Sample Apartment",
+    "buyingPrice": 227556,
+    "pricePerSqm": 6321,
+    "squareMeter": 36,
+    "region": "BY",
+    "apartmentType": "Penthouse",
+    "rooms": 3,
+    "constructionYear": 1988,
+    "energyEfficiencyClass": "B",
+    "active": true,
+    "locationFactor": {
+      "population": 2457494,
+      "unemploymentRate": 2.9
+    }
+  },
+  {
+    "id": "fake-264835",
+    "title": "Sample Apartment",
+    "buyingPrice": 627192,
+    "pricePerSqm": 6744,
+    "squareMeter": 93,
+    "region": "BY",
+    "apartmentType": "Loft",
+    "rooms": 4,
+    "constructionYear": 1977,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 2474696,
+      "unemploymentRate": 6.0
+    }
+  },
+  {
+    "id": "fake-626611",
+    "title": "Sample Apartment",
+    "buyingPrice": 1007480,
+    "pricePerSqm": 11320,
+    "squareMeter": 89,
+    "region": "HE",
+    "apartmentType": "Loft",
+    "rooms": 5,
+    "constructionYear": 1971,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 832331,
+      "unemploymentRate": 8.9
+    }
+  },
+  {
+    "id": "fake-962619",
+    "title": "Sample Apartment",
+    "buyingPrice": 885278,
+    "pricePerSqm": 10666,
+    "squareMeter": 83,
+    "region": "BE",
+    "apartmentType": "Maisonette",
+    "rooms": 3,
+    "constructionYear": 2003,
+    "energyEfficiencyClass": "G",
+    "active": true,
+    "locationFactor": {
+      "population": 2197127,
+      "unemploymentRate": 3.1
+    }
+  },
+  {
+    "id": "fake-656173",
+    "title": "Sample Apartment",
+    "buyingPrice": 690191,
+    "pricePerSqm": 9721,
+    "squareMeter": 71,
+    "region": "HH",
+    "apartmentType": "Apartment",
+    "rooms": 2,
+    "constructionYear": 1999,
+    "energyEfficiencyClass": "A",
+    "active": true,
+    "locationFactor": {
+      "population": 1331966,
+      "unemploymentRate": 9.6
+    }
+  },
+  {
+    "id": "fake-944444",
+    "title": "Sample Apartment",
+    "buyingPrice": 761588,
+    "pricePerSqm": 8102,
+    "squareMeter": 94,
+    "region": "BE",
+    "apartmentType": "Apartment",
+    "rooms": 4,
+    "constructionYear": 1956,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 1377405,
+      "unemploymentRate": 8.5
+    }
+  },
+  {
+    "id": "fake-888608",
+    "title": "Sample Apartment",
+    "buyingPrice": 653112,
+    "pricePerSqm": 6948,
+    "squareMeter": 94,
+    "region": "HE",
+    "apartmentType": "Maisonette",
+    "rooms": 2,
+    "constructionYear": 2022,
+    "energyEfficiencyClass": "C",
+    "active": true,
+    "locationFactor": {
+      "population": 2760130,
+      "unemploymentRate": 3.7
+    }
+  },
+  {
+    "id": "fake-353541",
+    "title": "Sample Apartment",
+    "buyingPrice": 372555,
+    "pricePerSqm": 7305,
+    "squareMeter": 51,
+    "region": "HH",
+    "apartmentType": "Maisonette",
+    "rooms": 3,
+    "constructionYear": 2002,
+    "energyEfficiencyClass": "C",
+    "active": true,
+    "locationFactor": {
+      "population": 1629552,
+      "unemploymentRate": 4.8
+    }
+  },
+  {
+    "id": "fake-126487",
+    "title": "Sample Apartment",
+    "buyingPrice": 352704,
+    "pricePerSqm": 11022,
+    "squareMeter": 32,
+    "region": "BW",
+    "apartmentType": "Apartment",
+    "rooms": 2,
+    "constructionYear": 1955,
+    "energyEfficiencyClass": "A",
+    "active": true,
+    "locationFactor": {
+      "population": 798128,
+      "unemploymentRate": 6.6
+    }
+  },
+  {
+    "id": "fake-165154",
+    "title": "Sample Apartment",
+    "buyingPrice": 704880,
+    "pricePerSqm": 6408,
+    "squareMeter": 110,
+    "region": "NW",
+    "apartmentType": "Loft",
+    "rooms": 5,
+    "constructionYear": 1988,
+    "energyEfficiencyClass": "B",
+    "active": true,
+    "locationFactor": {
+      "population": 1519216,
+      "unemploymentRate": 2.4
+    }
+  },
+  {
+    "id": "fake-550850",
+    "title": "Sample Apartment",
+    "buyingPrice": 143088,
+    "pricePerSqm": 2981,
+    "squareMeter": 48,
+    "region": "BY",
+    "apartmentType": "Loft",
+    "rooms": 4,
+    "constructionYear": 1992,
+    "energyEfficiencyClass": "C",
+    "active": true,
+    "locationFactor": {
+      "population": 2727680,
+      "unemploymentRate": 8.0
+    }
+  },
+  {
+    "id": "fake-297570",
+    "title": "Sample Apartment",
+    "buyingPrice": 136692,
+    "pricePerSqm": 3797,
+    "squareMeter": 36,
+    "region": "NW",
+    "apartmentType": "Maisonette",
+    "rooms": 5,
+    "constructionYear": 2013,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 1596863,
+      "unemploymentRate": 8.8
+    }
+  },
+  {
+    "id": "fake-510787",
+    "title": "Sample Apartment",
+    "buyingPrice": 788082,
+    "pricePerSqm": 8474,
+    "squareMeter": 93,
+    "region": "HE",
+    "apartmentType": "Maisonette",
+    "rooms": 2,
+    "constructionYear": 1969,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 192436,
+      "unemploymentRate": 2.6
+    }
+  },
+  {
+    "id": "fake-499535",
+    "title": "Sample Apartment",
+    "buyingPrice": 563806,
+    "pricePerSqm": 7619,
+    "squareMeter": 74,
+    "region": "BY",
+    "apartmentType": "Loft",
+    "rooms": 5,
+    "constructionYear": 1967,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 1064574,
+      "unemploymentRate": 4.7
+    }
+  },
+  {
+    "id": "fake-234284",
+    "title": "Sample Apartment",
+    "buyingPrice": 811426,
+    "pricePerSqm": 10538,
+    "squareMeter": 77,
+    "region": "BY",
+    "apartmentType": "Apartment",
+    "rooms": 5,
+    "constructionYear": 2013,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 2714524,
+      "unemploymentRate": 6.6
+    }
+  },
+  {
+    "id": "fake-887695",
+    "title": "Sample Apartment",
+    "buyingPrice": 393960,
+    "pricePerSqm": 3752,
+    "squareMeter": 105,
+    "region": "BE",
+    "apartmentType": "Maisonette",
+    "rooms": 1,
+    "constructionYear": 1973,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 1944261,
+      "unemploymentRate": 7.1
+    }
+  },
+  {
+    "id": "fake-269949",
+    "title": "Sample Apartment",
+    "buyingPrice": 558888,
+    "pricePerSqm": 9636,
+    "squareMeter": 58,
+    "region": "HE",
+    "apartmentType": "Maisonette",
+    "rooms": 3,
+    "constructionYear": 1990,
+    "energyEfficiencyClass": "B",
+    "active": true,
+    "locationFactor": {
+      "population": 2736240,
+      "unemploymentRate": 6.8
+    }
+  },
+  {
+    "id": "fake-915194",
+    "title": "Sample Apartment",
+    "buyingPrice": 264565,
+    "pricePerSqm": 7559,
+    "squareMeter": 35,
+    "region": "NW",
+    "apartmentType": "Maisonette",
+    "rooms": 1,
+    "constructionYear": 2007,
+    "energyEfficiencyClass": "A",
+    "active": true,
+    "locationFactor": {
+      "population": 255802,
+      "unemploymentRate": 8.4
+    }
+  },
+  {
+    "id": "fake-672390",
+    "title": "Sample Apartment",
+    "buyingPrice": 589472,
+    "pricePerSqm": 11336,
+    "squareMeter": 52,
+    "region": "HE",
+    "apartmentType": "Apartment",
+    "rooms": 4,
+    "constructionYear": 1969,
+    "energyEfficiencyClass": "C",
+    "active": true,
+    "locationFactor": {
+      "population": 1242608,
+      "unemploymentRate": 7.2
+    }
+  },
+  {
+    "id": "fake-218110",
+    "title": "Sample Apartment",
+    "buyingPrice": 497490,
+    "pricePerSqm": 10815,
+    "squareMeter": 46,
+    "region": "HE",
+    "apartmentType": "Maisonette",
+    "rooms": 3,
+    "constructionYear": 1996,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 1275853,
+      "unemploymentRate": 2.9
+    }
+  },
+  {
+    "id": "fake-780994",
+    "title": "Sample Apartment",
+    "buyingPrice": 343944,
+    "pricePerSqm": 10116,
+    "squareMeter": 34,
+    "region": "HE",
+    "apartmentType": "Maisonette",
+    "rooms": 3,
+    "constructionYear": 1971,
+    "energyEfficiencyClass": "G",
+    "active": true,
+    "locationFactor": {
+      "population": 595622,
+      "unemploymentRate": 6.1
+    }
+  },
+  {
+    "id": "fake-396047",
+    "title": "Sample Apartment",
+    "buyingPrice": 598000,
+    "pricePerSqm": 9200,
+    "squareMeter": 65,
+    "region": "NW",
+    "apartmentType": "Apartment",
+    "rooms": 4,
+    "constructionYear": 1962,
+    "energyEfficiencyClass": "A",
+    "active": true,
+    "locationFactor": {
+      "population": 855293,
+      "unemploymentRate": 3.2
+    }
+  },
+  {
+    "id": "fake-885820",
+    "title": "Sample Apartment",
+    "buyingPrice": 155204,
+    "pricePerSqm": 3374,
+    "squareMeter": 46,
+    "region": "NW",
+    "apartmentType": "Maisonette",
+    "rooms": 1,
+    "constructionYear": 1976,
+    "energyEfficiencyClass": "B",
+    "active": true,
+    "locationFactor": {
+      "population": 2629517,
+      "unemploymentRate": 3.4
+    }
+  },
+  {
+    "id": "fake-222413",
+    "title": "Sample Apartment",
+    "buyingPrice": 381276,
+    "pricePerSqm": 10591,
+    "squareMeter": 36,
+    "region": "BE",
+    "apartmentType": "Penthouse",
+    "rooms": 1,
+    "constructionYear": 1984,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 1394929,
+      "unemploymentRate": 2.1
+    }
+  },
+  {
+    "id": "fake-740098",
+    "title": "Sample Apartment",
+    "buyingPrice": 595056,
+    "pricePerSqm": 6072,
+    "squareMeter": 98,
+    "region": "BE",
+    "apartmentType": "Penthouse",
+    "rooms": 4,
+    "constructionYear": 1975,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 2555169,
+      "unemploymentRate": 7.1
+    }
+  },
+  {
+    "id": "fake-632725",
+    "title": "Sample Apartment",
+    "buyingPrice": 517235,
+    "pricePerSqm": 7285,
+    "squareMeter": 71,
+    "region": "BY",
+    "apartmentType": "Apartment",
+    "rooms": 3,
+    "constructionYear": 1982,
+    "energyEfficiencyClass": "G",
+    "active": true,
+    "locationFactor": {
+      "population": 2636835,
+      "unemploymentRate": 5.6
+    }
+  },
+  {
+    "id": "fake-900578",
+    "title": "Sample Apartment",
+    "buyingPrice": 574680,
+    "pricePerSqm": 4789,
+    "squareMeter": 120,
+    "region": "HE",
+    "apartmentType": "Apartment",
+    "rooms": 4,
+    "constructionYear": 2004,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 2239546,
+      "unemploymentRate": 3.3
+    }
+  },
+  {
+    "id": "fake-448406",
+    "title": "Sample Apartment",
+    "buyingPrice": 288569,
+    "pricePerSqm": 4891,
+    "squareMeter": 59,
+    "region": "BY",
+    "apartmentType": "Penthouse",
+    "rooms": 4,
+    "constructionYear": 1980,
+    "energyEfficiencyClass": "G",
+    "active": true,
+    "locationFactor": {
+      "population": 314317,
+      "unemploymentRate": 6.0
+    }
+  },
+  {
+    "id": "fake-420057",
+    "title": "Sample Apartment",
+    "buyingPrice": 406033,
+    "pricePerSqm": 7661,
+    "squareMeter": 53,
+    "region": "BE",
+    "apartmentType": "Apartment",
+    "rooms": 4,
+    "constructionYear": 2001,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 708756,
+      "unemploymentRate": 4.2
+    }
+  },
+  {
+    "id": "fake-425214",
+    "title": "Sample Apartment",
+    "buyingPrice": 708064,
+    "pricePerSqm": 6104,
+    "squareMeter": 116,
+    "region": "HE",
+    "apartmentType": "Apartment",
+    "rooms": 5,
+    "constructionYear": 1992,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 1436444,
+      "unemploymentRate": 3.7
+    }
+  },
+  {
+    "id": "fake-413213",
+    "title": "Sample Apartment",
+    "buyingPrice": 1068080,
+    "pricePerSqm": 10270,
+    "squareMeter": 104,
+    "region": "BY",
+    "apartmentType": "Loft",
+    "rooms": 5,
+    "constructionYear": 1967,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 2174266,
+      "unemploymentRate": 5.4
+    }
+  },
+  {
+    "id": "fake-481969",
+    "title": "Sample Apartment",
+    "buyingPrice": 919448,
+    "pricePerSqm": 9994,
+    "squareMeter": 92,
+    "region": "BW",
+    "apartmentType": "Penthouse",
+    "rooms": 4,
+    "constructionYear": 1997,
+    "energyEfficiencyClass": "C",
+    "active": true,
+    "locationFactor": {
+      "population": 2882401,
+      "unemploymentRate": 5.9
+    }
+  },
+  {
+    "id": "fake-222955",
+    "title": "Sample Apartment",
+    "buyingPrice": 362296,
+    "pricePerSqm": 7876,
+    "squareMeter": 46,
+    "region": "BW",
+    "apartmentType": "Penthouse",
+    "rooms": 5,
+    "constructionYear": 2017,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 967611,
+      "unemploymentRate": 8.0
+    }
+  },
+  {
+    "id": "fake-372251",
+    "title": "Sample Apartment",
+    "buyingPrice": 109260,
+    "pricePerSqm": 3642,
+    "squareMeter": 30,
+    "region": "BW",
+    "apartmentType": "Penthouse",
+    "rooms": 2,
+    "constructionYear": 2001,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 596071,
+      "unemploymentRate": 4.1
+    }
+  },
+  {
+    "id": "fake-372762",
+    "title": "Sample Apartment",
+    "buyingPrice": 630981,
+    "pricePerSqm": 5393,
+    "squareMeter": 117,
+    "region": "BE",
+    "apartmentType": "Maisonette",
+    "rooms": 3,
+    "constructionYear": 1961,
+    "energyEfficiencyClass": "G",
+    "active": true,
+    "locationFactor": {
+      "population": 2996108,
+      "unemploymentRate": 8.5
+    }
+  },
+  {
+    "id": "fake-203472",
+    "title": "Sample Apartment",
+    "buyingPrice": 243600,
+    "pricePerSqm": 6960,
+    "squareMeter": 35,
+    "region": "NW",
+    "apartmentType": "Loft",
+    "rooms": 5,
+    "constructionYear": 2010,
+    "energyEfficiencyClass": "A",
+    "active": true,
+    "locationFactor": {
+      "population": 1051924,
+      "unemploymentRate": 3.9
+    }
+  },
+  {
+    "id": "fake-655188",
+    "title": "Sample Apartment",
+    "buyingPrice": 286770,
+    "pricePerSqm": 8690,
+    "squareMeter": 33,
+    "region": "BE",
+    "apartmentType": "Maisonette",
+    "rooms": 2,
+    "constructionYear": 2016,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 2031524,
+      "unemploymentRate": 6.3
+    }
+  },
+  {
+    "id": "fake-839357",
+    "title": "Sample Apartment",
+    "buyingPrice": 243342,
+    "pricePerSqm": 7374,
+    "squareMeter": 33,
+    "region": "BY",
+    "apartmentType": "Apartment",
+    "rooms": 3,
+    "constructionYear": 1952,
+    "energyEfficiencyClass": "G",
+    "active": true,
+    "locationFactor": {
+      "population": 1834683,
+      "unemploymentRate": 8.5
+    }
+  },
+  {
+    "id": "fake-780312",
+    "title": "Sample Apartment",
+    "buyingPrice": 579940,
+    "pricePerSqm": 5420,
+    "squareMeter": 107,
+    "region": "BY",
+    "apartmentType": "Loft",
+    "rooms": 2,
+    "constructionYear": 2019,
+    "energyEfficiencyClass": "B",
+    "active": true,
+    "locationFactor": {
+      "population": 823724,
+      "unemploymentRate": 5.3
+    }
+  },
+  {
+    "id": "fake-715086",
+    "title": "Sample Apartment",
+    "buyingPrice": 1214868,
+    "pricePerSqm": 10473,
+    "squareMeter": 116,
+    "region": "HE",
+    "apartmentType": "Loft",
+    "rooms": 2,
+    "constructionYear": 1979,
+    "energyEfficiencyClass": "G",
+    "active": true,
+    "locationFactor": {
+      "population": 990055,
+      "unemploymentRate": 9.0
+    }
+  },
+  {
+    "id": "fake-366864",
+    "title": "Sample Apartment",
+    "buyingPrice": 794020,
+    "pricePerSqm": 10730,
+    "squareMeter": 74,
+    "region": "BE",
+    "apartmentType": "Loft",
+    "rooms": 4,
+    "constructionYear": 2018,
+    "energyEfficiencyClass": "C",
+    "active": true,
+    "locationFactor": {
+      "population": 758348,
+      "unemploymentRate": 9.9
+    }
+  },
+  {
+    "id": "fake-390602",
+    "title": "Sample Apartment",
+    "buyingPrice": 244992,
+    "pricePerSqm": 3828,
+    "squareMeter": 64,
+    "region": "BE",
+    "apartmentType": "Penthouse",
+    "rooms": 3,
+    "constructionYear": 2014,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 2633496,
+      "unemploymentRate": 6.0
+    }
+  },
+  {
+    "id": "fake-569122",
+    "title": "Sample Apartment",
+    "buyingPrice": 678419,
+    "pricePerSqm": 5701,
+    "squareMeter": 119,
+    "region": "BW",
+    "apartmentType": "Penthouse",
+    "rooms": 2,
+    "constructionYear": 1968,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 1488100,
+      "unemploymentRate": 2.3
+    }
+  },
+  {
+    "id": "fake-976488",
+    "title": "Sample Apartment",
+    "buyingPrice": 371448,
+    "pricePerSqm": 5544,
+    "squareMeter": 67,
+    "region": "HE",
+    "apartmentType": "Loft",
+    "rooms": 3,
+    "constructionYear": 2019,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 677774,
+      "unemploymentRate": 9.5
+    }
+  },
+  {
+    "id": "fake-412024",
+    "title": "Sample Apartment",
+    "buyingPrice": 241735,
+    "pricePerSqm": 3719,
+    "squareMeter": 65,
+    "region": "BY",
+    "apartmentType": "Apartment",
+    "rooms": 3,
+    "constructionYear": 1969,
+    "energyEfficiencyClass": "C",
+    "active": true,
+    "locationFactor": {
+      "population": 186533,
+      "unemploymentRate": 3.3
+    }
+  },
+  {
+    "id": "fake-491306",
+    "title": "Sample Apartment",
+    "buyingPrice": 151527,
+    "pricePerSqm": 2859,
+    "squareMeter": 53,
+    "region": "BW",
+    "apartmentType": "Loft",
+    "rooms": 4,
+    "constructionYear": 1973,
+    "energyEfficiencyClass": "A",
+    "active": true,
+    "locationFactor": {
+      "population": 2940654,
+      "unemploymentRate": 6.8
+    }
+  },
+  {
+    "id": "fake-470685",
+    "title": "Sample Apartment",
+    "buyingPrice": 1090260,
+    "pricePerSqm": 10095,
+    "squareMeter": 108,
+    "region": "HE",
+    "apartmentType": "Penthouse",
+    "rooms": 4,
+    "constructionYear": 1995,
+    "energyEfficiencyClass": "G",
+    "active": true,
+    "locationFactor": {
+      "population": 2185858,
+      "unemploymentRate": 2.1
+    }
+  },
+  {
+    "id": "fake-736439",
+    "title": "Sample Apartment",
+    "buyingPrice": 384426,
+    "pricePerSqm": 4746,
+    "squareMeter": 81,
+    "region": "BY",
+    "apartmentType": "Maisonette",
+    "rooms": 2,
+    "constructionYear": 1989,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 2438032,
+      "unemploymentRate": 8.5
+    }
+  },
+  {
+    "id": "fake-337996",
+    "title": "Sample Apartment",
+    "buyingPrice": 167376,
+    "pricePerSqm": 5072,
+    "squareMeter": 33,
+    "region": "BW",
+    "apartmentType": "Maisonette",
+    "rooms": 4,
+    "constructionYear": 1993,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 1206311,
+      "unemploymentRate": 3.9
+    }
+  },
+  {
+    "id": "fake-394650",
+    "title": "Sample Apartment",
+    "buyingPrice": 254082,
+    "pricePerSqm": 2703,
+    "squareMeter": 94,
+    "region": "BW",
+    "apartmentType": "Maisonette",
+    "rooms": 1,
+    "constructionYear": 1981,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 1151764,
+      "unemploymentRate": 8.0
+    }
+  },
+  {
+    "id": "fake-587312",
+    "title": "Sample Apartment",
+    "buyingPrice": 107900,
+    "pricePerSqm": 4316,
+    "squareMeter": 25,
+    "region": "BY",
+    "apartmentType": "Maisonette",
+    "rooms": 5,
+    "constructionYear": 1976,
+    "energyEfficiencyClass": "C",
+    "active": true,
+    "locationFactor": {
+      "population": 451533,
+      "unemploymentRate": 7.8
+    }
+  },
+  {
+    "id": "fake-786981",
+    "title": "Sample Apartment",
+    "buyingPrice": 300932,
+    "pricePerSqm": 6542,
+    "squareMeter": 46,
+    "region": "HE",
+    "apartmentType": "Apartment",
+    "rooms": 4,
+    "constructionYear": 2017,
+    "energyEfficiencyClass": "B",
+    "active": true,
+    "locationFactor": {
+      "population": 2508071,
+      "unemploymentRate": 4.2
+    }
+  },
+  {
+    "id": "fake-854259",
+    "title": "Sample Apartment",
+    "buyingPrice": 491862,
+    "pricePerSqm": 11711,
+    "squareMeter": 42,
+    "region": "HE",
+    "apartmentType": "Loft",
+    "rooms": 3,
+    "constructionYear": 1989,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 2110747,
+      "unemploymentRate": 8.9
+    }
+  },
+  {
+    "id": "fake-453003",
+    "title": "Sample Apartment",
+    "buyingPrice": 568008,
+    "pricePerSqm": 6762,
+    "squareMeter": 84,
+    "region": "BW",
+    "apartmentType": "Loft",
+    "rooms": 4,
+    "constructionYear": 1970,
+    "energyEfficiencyClass": "G",
+    "active": true,
+    "locationFactor": {
+      "population": 2651370,
+      "unemploymentRate": 9.5
+    }
+  },
+  {
+    "id": "fake-688955",
+    "title": "Sample Apartment",
+    "buyingPrice": 573459,
+    "pricePerSqm": 8311,
+    "squareMeter": 69,
+    "region": "HH",
+    "apartmentType": "Loft",
+    "rooms": 2,
+    "constructionYear": 1993,
+    "energyEfficiencyClass": "B",
+    "active": true,
+    "locationFactor": {
+      "population": 2414335,
+      "unemploymentRate": 8.1
+    }
+  },
+  {
+    "id": "fake-501899",
+    "title": "Sample Apartment",
+    "buyingPrice": 417632,
+    "pricePerSqm": 6736,
+    "squareMeter": 62,
+    "region": "BE",
+    "apartmentType": "Loft",
+    "rooms": 3,
+    "constructionYear": 1969,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 1353150,
+      "unemploymentRate": 6.0
+    }
+  },
+  {
+    "id": "fake-826700",
+    "title": "Sample Apartment",
+    "buyingPrice": 180576,
+    "pricePerSqm": 2508,
+    "squareMeter": 72,
+    "region": "BE",
+    "apartmentType": "Penthouse",
+    "rooms": 5,
+    "constructionYear": 1977,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 1660025,
+      "unemploymentRate": 5.0
+    }
+  },
+  {
+    "id": "fake-226293",
+    "title": "Sample Apartment",
+    "buyingPrice": 374484,
+    "pricePerSqm": 8511,
+    "squareMeter": 44,
+    "region": "BW",
+    "apartmentType": "Maisonette",
+    "rooms": 5,
+    "constructionYear": 1976,
+    "energyEfficiencyClass": "G",
+    "active": true,
+    "locationFactor": {
+      "population": 1021133,
+      "unemploymentRate": 5.3
+    }
+  },
+  {
+    "id": "fake-508960",
+    "title": "Sample Apartment",
+    "buyingPrice": 168704,
+    "pricePerSqm": 2636,
+    "squareMeter": 64,
+    "region": "BY",
+    "apartmentType": "Maisonette",
+    "rooms": 4,
+    "constructionYear": 1968,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 582494,
+      "unemploymentRate": 5.5
+    }
+  },
+  {
+    "id": "fake-954140",
+    "title": "Sample Apartment",
+    "buyingPrice": 490268,
+    "pricePerSqm": 10658,
+    "squareMeter": 46,
+    "region": "HH",
+    "apartmentType": "Loft",
+    "rooms": 5,
+    "constructionYear": 1989,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 197615,
+      "unemploymentRate": 4.4
+    }
+  },
+  {
+    "id": "fake-333546",
+    "title": "Sample Apartment",
+    "buyingPrice": 228270,
+    "pricePerSqm": 7609,
+    "squareMeter": 30,
+    "region": "BW",
+    "apartmentType": "Penthouse",
+    "rooms": 3,
+    "constructionYear": 1987,
+    "energyEfficiencyClass": "A",
+    "active": true,
+    "locationFactor": {
+      "population": 1230132,
+      "unemploymentRate": 7.8
+    }
+  },
+  {
+    "id": "fake-716027",
+    "title": "Sample Apartment",
+    "buyingPrice": 669300,
+    "pricePerSqm": 6693,
+    "squareMeter": 100,
+    "region": "BW",
+    "apartmentType": "Maisonette",
+    "rooms": 4,
+    "constructionYear": 1995,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 1681080,
+      "unemploymentRate": 6.2
+    }
+  },
+  {
+    "id": "fake-249578",
+    "title": "Sample Apartment",
+    "buyingPrice": 691092,
+    "pricePerSqm": 8748,
+    "squareMeter": 79,
+    "region": "HE",
+    "apartmentType": "Penthouse",
+    "rooms": 5,
+    "constructionYear": 1998,
+    "energyEfficiencyClass": "G",
+    "active": true,
+    "locationFactor": {
+      "population": 115262,
+      "unemploymentRate": 9.5
+    }
+  },
+  {
+    "id": "fake-718253",
+    "title": "Sample Apartment",
+    "buyingPrice": 515160,
+    "pricePerSqm": 8586,
+    "squareMeter": 60,
+    "region": "BE",
+    "apartmentType": "Loft",
+    "rooms": 3,
+    "constructionYear": 1994,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 2107944,
+      "unemploymentRate": 8.1
+    }
+  },
+  {
+    "id": "fake-892967",
+    "title": "Sample Apartment",
+    "buyingPrice": 229026,
+    "pricePerSqm": 5586,
+    "squareMeter": 41,
+    "region": "BY",
+    "apartmentType": "Penthouse",
+    "rooms": 2,
+    "constructionYear": 1978,
+    "energyEfficiencyClass": "B",
+    "active": true,
+    "locationFactor": {
+      "population": 320633,
+      "unemploymentRate": 7.2
+    }
+  },
+  {
+    "id": "fake-302227",
+    "title": "Sample Apartment",
+    "buyingPrice": 338240,
+    "pricePerSqm": 5285,
+    "squareMeter": 64,
+    "region": "HH",
+    "apartmentType": "Apartment",
+    "rooms": 5,
+    "constructionYear": 1965,
+    "energyEfficiencyClass": "A",
+    "active": true,
+    "locationFactor": {
+      "population": 2932206,
+      "unemploymentRate": 9.3
+    }
+  },
+  {
+    "id": "fake-709101",
+    "title": "Sample Apartment",
+    "buyingPrice": 181445,
+    "pricePerSqm": 3299,
+    "squareMeter": 55,
+    "region": "HE",
+    "apartmentType": "Loft",
+    "rooms": 5,
+    "constructionYear": 1995,
+    "energyEfficiencyClass": "C",
+    "active": true,
+    "locationFactor": {
+      "population": 2894697,
+      "unemploymentRate": 8.0
+    }
+  },
+  {
+    "id": "fake-290041",
+    "title": "Sample Apartment",
+    "buyingPrice": 251559,
+    "pricePerSqm": 3267,
+    "squareMeter": 77,
+    "region": "NW",
+    "apartmentType": "Maisonette",
+    "rooms": 4,
+    "constructionYear": 1978,
+    "energyEfficiencyClass": "A",
+    "active": true,
+    "locationFactor": {
+      "population": 260289,
+      "unemploymentRate": 5.0
+    }
+  },
+  {
+    "id": "fake-564544",
+    "title": "Sample Apartment",
+    "buyingPrice": 383328,
+    "pricePerSqm": 5808,
+    "squareMeter": 66,
+    "region": "HH",
+    "apartmentType": "Loft",
+    "rooms": 4,
+    "constructionYear": 1986,
+    "energyEfficiencyClass": "C",
+    "active": true,
+    "locationFactor": {
+      "population": 1369641,
+      "unemploymentRate": 6.0
+    }
+  },
+  {
+    "id": "fake-190392",
+    "title": "Sample Apartment",
+    "buyingPrice": 1337427,
+    "pricePerSqm": 11431,
+    "squareMeter": 117,
+    "region": "HE",
+    "apartmentType": "Maisonette",
+    "rooms": 5,
+    "constructionYear": 1997,
+    "energyEfficiencyClass": "G",
+    "active": true,
+    "locationFactor": {
+      "population": 2271433,
+      "unemploymentRate": 4.7
+    }
+  },
+  {
+    "id": "fake-209924",
+    "title": "Sample Apartment",
+    "buyingPrice": 709080,
+    "pricePerSqm": 6220,
+    "squareMeter": 114,
+    "region": "BW",
+    "apartmentType": "Penthouse",
+    "rooms": 5,
+    "constructionYear": 1954,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 754977,
+      "unemploymentRate": 9.0
+    }
+  },
+  {
+    "id": "fake-975766",
+    "title": "Sample Apartment",
+    "buyingPrice": 214600,
+    "pricePerSqm": 4292,
+    "squareMeter": 50,
+    "region": "HH",
+    "apartmentType": "Penthouse",
+    "rooms": 3,
+    "constructionYear": 2011,
+    "energyEfficiencyClass": "B",
+    "active": true,
+    "locationFactor": {
+      "population": 2676580,
+      "unemploymentRate": 7.5
+    }
+  },
+  {
+    "id": "fake-622798",
+    "title": "Sample Apartment",
+    "buyingPrice": 574368,
+    "pricePerSqm": 11966,
+    "squareMeter": 48,
+    "region": "NW",
+    "apartmentType": "Maisonette",
+    "rooms": 4,
+    "constructionYear": 1999,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 2459448,
+      "unemploymentRate": 5.9
+    }
+  },
+  {
+    "id": "fake-526168",
+    "title": "Sample Apartment",
+    "buyingPrice": 317044,
+    "pricePerSqm": 6097,
+    "squareMeter": 52,
+    "region": "HE",
+    "apartmentType": "Apartment",
+    "rooms": 2,
+    "constructionYear": 1969,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 1586411,
+      "unemploymentRate": 2.1
+    }
+  },
+  {
+    "id": "fake-585728",
+    "title": "Sample Apartment",
+    "buyingPrice": 116402,
+    "pricePerSqm": 4477,
+    "squareMeter": 26,
+    "region": "BE",
+    "apartmentType": "Penthouse",
+    "rooms": 2,
+    "constructionYear": 2022,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 2781053,
+      "unemploymentRate": 10.0
+    }
+  },
+  {
+    "id": "fake-447120",
+    "title": "Sample Apartment",
+    "buyingPrice": 1040052,
+    "pricePerSqm": 9204,
+    "squareMeter": 113,
+    "region": "NW",
+    "apartmentType": "Loft",
+    "rooms": 4,
+    "constructionYear": 2018,
+    "energyEfficiencyClass": "G",
+    "active": true,
+    "locationFactor": {
+      "population": 770331,
+      "unemploymentRate": 9.8
+    }
+  },
+  {
+    "id": "fake-281012",
+    "title": "Sample Apartment",
+    "buyingPrice": 187978,
+    "pricePerSqm": 3241,
+    "squareMeter": 58,
+    "region": "BE",
+    "apartmentType": "Apartment",
+    "rooms": 5,
+    "constructionYear": 1995,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 2429490,
+      "unemploymentRate": 7.1
+    }
+  },
+  {
+    "id": "fake-775928",
+    "title": "Sample Apartment",
+    "buyingPrice": 676026,
+    "pricePerSqm": 6318,
+    "squareMeter": 107,
+    "region": "BY",
+    "apartmentType": "Maisonette",
+    "rooms": 2,
+    "constructionYear": 1973,
+    "energyEfficiencyClass": "B",
+    "active": true,
+    "locationFactor": {
+      "population": 82608,
+      "unemploymentRate": 9.7
+    }
+  },
+  {
+    "id": "fake-902244",
+    "title": "Sample Apartment",
+    "buyingPrice": 229158,
+    "pricePerSqm": 3951,
+    "squareMeter": 58,
+    "region": "BW",
+    "apartmentType": "Loft",
+    "rooms": 4,
+    "constructionYear": 2015,
+    "energyEfficiencyClass": "B",
+    "active": true,
+    "locationFactor": {
+      "population": 2850388,
+      "unemploymentRate": 2.2
+    }
+  },
+  {
+    "id": "fake-418060",
+    "title": "Sample Apartment",
+    "buyingPrice": 882446,
+    "pricePerSqm": 10261,
+    "squareMeter": 86,
+    "region": "BE",
+    "apartmentType": "Apartment",
+    "rooms": 4,
+    "constructionYear": 1967,
+    "energyEfficiencyClass": "B",
+    "active": true,
+    "locationFactor": {
+      "population": 2653903,
+      "unemploymentRate": 3.7
+    }
+  },
+  {
+    "id": "fake-936512",
+    "title": "Sample Apartment",
+    "buyingPrice": 356577,
+    "pricePerSqm": 9143,
+    "squareMeter": 39,
+    "region": "BW",
+    "apartmentType": "Maisonette",
+    "rooms": 4,
+    "constructionYear": 1976,
+    "energyEfficiencyClass": "A",
+    "active": true,
+    "locationFactor": {
+      "population": 2688747,
+      "unemploymentRate": 5.8
+    }
+  },
+  {
+    "id": "fake-575602",
+    "title": "Sample Apartment",
+    "buyingPrice": 384748,
+    "pricePerSqm": 7399,
+    "squareMeter": 52,
+    "region": "BW",
+    "apartmentType": "Maisonette",
+    "rooms": 2,
+    "constructionYear": 1971,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 2889821,
+      "unemploymentRate": 3.3
+    }
+  },
+  {
+    "id": "fake-892315",
+    "title": "Sample Apartment",
+    "buyingPrice": 357595,
+    "pricePerSqm": 4207,
+    "squareMeter": 85,
+    "region": "BY",
+    "apartmentType": "Maisonette",
+    "rooms": 2,
+    "constructionYear": 1971,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 1139292,
+      "unemploymentRate": 8.4
+    }
+  },
+  {
+    "id": "fake-363786",
+    "title": "Sample Apartment",
+    "buyingPrice": 730917,
+    "pricePerSqm": 10593,
+    "squareMeter": 69,
+    "region": "NW",
+    "apartmentType": "Loft",
+    "rooms": 5,
+    "constructionYear": 1956,
+    "energyEfficiencyClass": "G",
+    "active": true,
+    "locationFactor": {
+      "population": 1855715,
+      "unemploymentRate": 4.8
+    }
+  },
+  {
+    "id": "fake-961877",
+    "title": "Sample Apartment",
+    "buyingPrice": 550229,
+    "pricePerSqm": 11707,
+    "squareMeter": 47,
+    "region": "BY",
+    "apartmentType": "Penthouse",
+    "rooms": 1,
+    "constructionYear": 1959,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 1592509,
+      "unemploymentRate": 5.4
+    }
+  },
+  {
+    "id": "fake-467204",
+    "title": "Sample Apartment",
+    "buyingPrice": 481800,
+    "pricePerSqm": 4380,
+    "squareMeter": 110,
+    "region": "NW",
+    "apartmentType": "Loft",
+    "rooms": 1,
+    "constructionYear": 2014,
+    "energyEfficiencyClass": "G",
+    "active": true,
+    "locationFactor": {
+      "population": 730244,
+      "unemploymentRate": 8.6
+    }
+  },
+  {
+    "id": "fake-212240",
+    "title": "Sample Apartment",
+    "buyingPrice": 126840,
+    "pricePerSqm": 4530,
+    "squareMeter": 28,
+    "region": "HH",
+    "apartmentType": "Penthouse",
+    "rooms": 3,
+    "constructionYear": 1982,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 1220285,
+      "unemploymentRate": 5.8
+    }
+  },
+  {
+    "id": "fake-318095",
+    "title": "Sample Apartment",
+    "buyingPrice": 255654,
+    "pricePerSqm": 4058,
+    "squareMeter": 63,
+    "region": "BW",
+    "apartmentType": "Loft",
+    "rooms": 2,
+    "constructionYear": 2021,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 468907,
+      "unemploymentRate": 8.8
+    }
+  },
+  {
+    "id": "fake-961666",
+    "title": "Sample Apartment",
+    "buyingPrice": 1086930,
+    "pricePerSqm": 9290,
+    "squareMeter": 117,
+    "region": "NW",
+    "apartmentType": "Loft",
+    "rooms": 5,
+    "constructionYear": 1993,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 120658,
+      "unemploymentRate": 6.8
+    }
+  },
+  {
+    "id": "fake-857878",
+    "title": "Sample Apartment",
+    "buyingPrice": 637767,
+    "pricePerSqm": 9243,
+    "squareMeter": 69,
+    "region": "BY",
+    "apartmentType": "Apartment",
+    "rooms": 2,
+    "constructionYear": 1970,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 2577105,
+      "unemploymentRate": 8.7
+    }
+  },
+  {
+    "id": "fake-398478",
+    "title": "Sample Apartment",
+    "buyingPrice": 578799,
+    "pricePerSqm": 11349,
+    "squareMeter": 51,
+    "region": "BW",
+    "apartmentType": "Penthouse",
+    "rooms": 1,
+    "constructionYear": 1995,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 154829,
+      "unemploymentRate": 7.3
+    }
+  },
+  {
+    "id": "fake-545202",
+    "title": "Sample Apartment",
+    "buyingPrice": 638280,
+    "pricePerSqm": 5910,
+    "squareMeter": 108,
+    "region": "HE",
+    "apartmentType": "Apartment",
+    "rooms": 5,
+    "constructionYear": 1973,
+    "energyEfficiencyClass": "C",
+    "active": true,
+    "locationFactor": {
+      "population": 2003458,
+      "unemploymentRate": 2.1
+    }
+  },
+  {
+    "id": "fake-115882",
+    "title": "Sample Apartment",
+    "buyingPrice": 338523,
+    "pricePerSqm": 5939,
+    "squareMeter": 57,
+    "region": "BW",
+    "apartmentType": "Apartment",
+    "rooms": 2,
+    "constructionYear": 1979,
+    "energyEfficiencyClass": "B",
+    "active": true,
+    "locationFactor": {
+      "population": 2055255,
+      "unemploymentRate": 2.7
+    }
+  },
+  {
+    "id": "fake-443548",
+    "title": "Sample Apartment",
+    "buyingPrice": 409675,
+    "pricePerSqm": 11705,
+    "squareMeter": 35,
+    "region": "NW",
+    "apartmentType": "Maisonette",
+    "rooms": 1,
+    "constructionYear": 1998,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 379461,
+      "unemploymentRate": 5.0
+    }
+  },
+  {
+    "id": "fake-523978",
+    "title": "Sample Apartment",
+    "buyingPrice": 303870,
+    "pricePerSqm": 8682,
+    "squareMeter": 35,
+    "region": "BW",
+    "apartmentType": "Maisonette",
+    "rooms": 2,
+    "constructionYear": 2023,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 1100324,
+      "unemploymentRate": 4.7
+    }
+  },
+  {
+    "id": "fake-167123",
+    "title": "Sample Apartment",
+    "buyingPrice": 314691,
+    "pricePerSqm": 8069,
+    "squareMeter": 39,
+    "region": "HH",
+    "apartmentType": "Penthouse",
+    "rooms": 4,
+    "constructionYear": 2016,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 1548682,
+      "unemploymentRate": 2.5
+    }
+  },
+  {
+    "id": "fake-543288",
+    "title": "Sample Apartment",
+    "buyingPrice": 363510,
+    "pricePerSqm": 4039,
+    "squareMeter": 90,
+    "region": "BW",
+    "apartmentType": "Apartment",
+    "rooms": 3,
+    "constructionYear": 1966,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 1654848,
+      "unemploymentRate": 6.5
+    }
+  },
+  {
+    "id": "fake-800047",
+    "title": "Sample Apartment",
+    "buyingPrice": 636500,
+    "pricePerSqm": 6700,
+    "squareMeter": 95,
+    "region": "NW",
+    "apartmentType": "Penthouse",
+    "rooms": 4,
+    "constructionYear": 1962,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 1107368,
+      "unemploymentRate": 7.8
+    }
+  },
+  {
+    "id": "fake-179141",
+    "title": "Sample Apartment",
+    "buyingPrice": 825945,
+    "pricePerSqm": 10455,
+    "squareMeter": 79,
+    "region": "BY",
+    "apartmentType": "Apartment",
+    "rooms": 3,
+    "constructionYear": 2014,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 794282,
+      "unemploymentRate": 6.3
+    }
+  },
+  {
+    "id": "fake-585762",
+    "title": "Sample Apartment",
+    "buyingPrice": 904708,
+    "pricePerSqm": 11452,
+    "squareMeter": 79,
+    "region": "HE",
+    "apartmentType": "Maisonette",
+    "rooms": 2,
+    "constructionYear": 2016,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 1955442,
+      "unemploymentRate": 3.1
+    }
+  },
+  {
+    "id": "fake-705817",
+    "title": "Sample Apartment",
+    "buyingPrice": 775010,
+    "pricePerSqm": 8158,
+    "squareMeter": 95,
+    "region": "BW",
+    "apartmentType": "Apartment",
+    "rooms": 5,
+    "constructionYear": 2003,
+    "energyEfficiencyClass": "G",
+    "active": true,
+    "locationFactor": {
+      "population": 2868228,
+      "unemploymentRate": 7.7
+    }
+  },
+  {
+    "id": "fake-673758",
+    "title": "Sample Apartment",
+    "buyingPrice": 651242,
+    "pricePerSqm": 11038,
+    "squareMeter": 59,
+    "region": "BE",
+    "apartmentType": "Maisonette",
+    "rooms": 3,
+    "constructionYear": 1966,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 69894,
+      "unemploymentRate": 2.8
+    }
+  },
+  {
+    "id": "fake-392193",
+    "title": "Sample Apartment",
+    "buyingPrice": 483408,
+    "pricePerSqm": 6714,
+    "squareMeter": 72,
+    "region": "BW",
+    "apartmentType": "Apartment",
+    "rooms": 2,
+    "constructionYear": 1973,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 1837156,
+      "unemploymentRate": 5.9
+    }
+  },
+  {
+    "id": "fake-378994",
+    "title": "Sample Apartment",
+    "buyingPrice": 1024569,
+    "pricePerSqm": 8757,
+    "squareMeter": 117,
+    "region": "BY",
+    "apartmentType": "Apartment",
+    "rooms": 3,
+    "constructionYear": 1988,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 1918414,
+      "unemploymentRate": 8.9
+    }
+  },
+  {
+    "id": "fake-496384",
+    "title": "Sample Apartment",
+    "buyingPrice": 963771,
+    "pricePerSqm": 9357,
+    "squareMeter": 103,
+    "region": "BW",
+    "apartmentType": "Loft",
+    "rooms": 1,
+    "constructionYear": 1961,
+    "energyEfficiencyClass": "A",
+    "active": true,
+    "locationFactor": {
+      "population": 2516547,
+      "unemploymentRate": 6.2
+    }
+  },
+  {
+    "id": "fake-252323",
+    "title": "Sample Apartment",
+    "buyingPrice": 326295,
+    "pricePerSqm": 7251,
+    "squareMeter": 45,
+    "region": "HE",
+    "apartmentType": "Maisonette",
+    "rooms": 5,
+    "constructionYear": 1978,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 106625,
+      "unemploymentRate": 7.7
+    }
+  },
+  {
+    "id": "fake-598777",
+    "title": "Sample Apartment",
+    "buyingPrice": 422170,
+    "pricePerSqm": 5705,
+    "squareMeter": 74,
+    "region": "NW",
+    "apartmentType": "Penthouse",
+    "rooms": 3,
+    "constructionYear": 2001,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 1907232,
+      "unemploymentRate": 8.4
+    }
+  },
+  {
+    "id": "fake-239392",
+    "title": "Sample Apartment",
+    "buyingPrice": 278768,
+    "pricePerSqm": 7336,
+    "squareMeter": 38,
+    "region": "NW",
+    "apartmentType": "Apartment",
+    "rooms": 3,
+    "constructionYear": 1960,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 2297212,
+      "unemploymentRate": 4.1
+    }
+  },
+  {
+    "id": "fake-932294",
+    "title": "Sample Apartment",
+    "buyingPrice": 953760,
+    "pricePerSqm": 9935,
+    "squareMeter": 96,
+    "region": "HE",
+    "apartmentType": "Loft",
+    "rooms": 5,
+    "constructionYear": 1967,
+    "energyEfficiencyClass": "B",
+    "active": true,
+    "locationFactor": {
+      "population": 2932206,
+      "unemploymentRate": 3.3
+    }
+  },
+  {
+    "id": "fake-424919",
+    "title": "Sample Apartment",
+    "buyingPrice": 285610,
+    "pricePerSqm": 4394,
+    "squareMeter": 65,
+    "region": "NW",
+    "apartmentType": "Penthouse",
+    "rooms": 4,
+    "constructionYear": 2009,
+    "energyEfficiencyClass": "C",
+    "active": true,
+    "locationFactor": {
+      "population": 2149376,
+      "unemploymentRate": 7.2
+    }
+  },
+  {
+    "id": "fake-721540",
+    "title": "Sample Apartment",
+    "buyingPrice": 151713,
+    "pricePerSqm": 5619,
+    "squareMeter": 27,
+    "region": "NW",
+    "apartmentType": "Apartment",
+    "rooms": 1,
+    "constructionYear": 1953,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 2121629,
+      "unemploymentRate": 5.3
+    }
+  },
+  {
+    "id": "fake-928941",
+    "title": "Sample Apartment",
+    "buyingPrice": 326502,
+    "pricePerSqm": 9894,
+    "squareMeter": 33,
+    "region": "BW",
+    "apartmentType": "Maisonette",
+    "rooms": 2,
+    "constructionYear": 2011,
+    "energyEfficiencyClass": "B",
+    "active": true,
+    "locationFactor": {
+      "population": 2790250,
+      "unemploymentRate": 3.1
+    }
+  },
+  {
+    "id": "fake-536956",
+    "title": "Sample Apartment",
+    "buyingPrice": 1144304,
+    "pricePerSqm": 9616,
+    "squareMeter": 119,
+    "region": "HH",
+    "apartmentType": "Loft",
+    "rooms": 3,
+    "constructionYear": 2012,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 2067521,
+      "unemploymentRate": 8.5
+    }
+  },
+  {
+    "id": "fake-772932",
+    "title": "Sample Apartment",
+    "buyingPrice": 657758,
+    "pricePerSqm": 10609,
+    "squareMeter": 62,
+    "region": "BE",
+    "apartmentType": "Penthouse",
+    "rooms": 2,
+    "constructionYear": 2008,
+    "energyEfficiencyClass": "G",
+    "active": true,
+    "locationFactor": {
+      "population": 2656707,
+      "unemploymentRate": 4.1
+    }
+  },
+  {
+    "id": "fake-793257",
+    "title": "Sample Apartment",
+    "buyingPrice": 265668,
+    "pricePerSqm": 5109,
+    "squareMeter": 52,
+    "region": "HE",
+    "apartmentType": "Maisonette",
+    "rooms": 2,
+    "constructionYear": 1975,
+    "energyEfficiencyClass": "C",
+    "active": true,
+    "locationFactor": {
+      "population": 1315171,
+      "unemploymentRate": 6.7
+    }
+  },
+  {
+    "id": "fake-564109",
+    "title": "Sample Apartment",
+    "buyingPrice": 888118,
+    "pricePerSqm": 11242,
+    "squareMeter": 79,
+    "region": "NW",
+    "apartmentType": "Loft",
+    "rooms": 2,
+    "constructionYear": 2016,
+    "energyEfficiencyClass": "G",
+    "active": true,
+    "locationFactor": {
+      "population": 504884,
+      "unemploymentRate": 3.7
+    }
+  },
+  {
+    "id": "fake-223159",
+    "title": "Sample Apartment",
+    "buyingPrice": 1069965,
+    "pricePerSqm": 11505,
+    "squareMeter": 93,
+    "region": "BW",
+    "apartmentType": "Apartment",
+    "rooms": 2,
+    "constructionYear": 1958,
+    "energyEfficiencyClass": "A",
+    "active": true,
+    "locationFactor": {
+      "population": 265408,
+      "unemploymentRate": 7.8
+    }
+  },
+  {
+    "id": "fake-997539",
+    "title": "Sample Apartment",
+    "buyingPrice": 536152,
+    "pricePerSqm": 4622,
+    "squareMeter": 116,
+    "region": "HE",
+    "apartmentType": "Apartment",
+    "rooms": 2,
+    "constructionYear": 1986,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 432640,
+      "unemploymentRate": 3.4
+    }
+  },
+  {
+    "id": "fake-684906",
+    "title": "Sample Apartment",
+    "buyingPrice": 332754,
+    "pricePerSqm": 5367,
+    "squareMeter": 62,
+    "region": "BW",
+    "apartmentType": "Penthouse",
+    "rooms": 3,
+    "constructionYear": 1988,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 1393997,
+      "unemploymentRate": 7.5
+    }
+  },
+  {
+    "id": "fake-560841",
+    "title": "Sample Apartment",
+    "buyingPrice": 800025,
+    "pricePerSqm": 10667,
+    "squareMeter": 75,
+    "region": "HE",
+    "apartmentType": "Loft",
+    "rooms": 4,
+    "constructionYear": 1957,
+    "energyEfficiencyClass": "A",
+    "active": true,
+    "locationFactor": {
+      "population": 430513,
+      "unemploymentRate": 5.6
+    }
+  },
+  {
+    "id": "fake-844786",
+    "title": "Sample Apartment",
+    "buyingPrice": 419253,
+    "pricePerSqm": 6873,
+    "squareMeter": 61,
+    "region": "BW",
+    "apartmentType": "Maisonette",
+    "rooms": 5,
+    "constructionYear": 2001,
+    "energyEfficiencyClass": "C",
+    "active": true,
+    "locationFactor": {
+      "population": 477400,
+      "unemploymentRate": 9.3
+    }
+  },
+  {
+    "id": "fake-375942",
+    "title": "Sample Apartment",
+    "buyingPrice": 595930,
+    "pricePerSqm": 5182,
+    "squareMeter": 115,
+    "region": "NW",
+    "apartmentType": "Apartment",
+    "rooms": 5,
+    "constructionYear": 2021,
+    "energyEfficiencyClass": "C",
+    "active": true,
+    "locationFactor": {
+      "population": 1881481,
+      "unemploymentRate": 2.1
+    }
+  },
+  {
+    "id": "fake-640905",
+    "title": "Sample Apartment",
+    "buyingPrice": 645696,
+    "pricePerSqm": 5472,
+    "squareMeter": 118,
+    "region": "HH",
+    "apartmentType": "Apartment",
+    "rooms": 1,
+    "constructionYear": 1989,
+    "energyEfficiencyClass": "C",
+    "active": true,
+    "locationFactor": {
+      "population": 417177,
+      "unemploymentRate": 8.9
+    }
+  },
+  {
+    "id": "fake-960421",
+    "title": "Sample Apartment",
+    "buyingPrice": 463148,
+    "pricePerSqm": 3892,
+    "squareMeter": 119,
+    "region": "HE",
+    "apartmentType": "Apartment",
+    "rooms": 4,
+    "constructionYear": 2000,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 1089729,
+      "unemploymentRate": 2.8
+    }
+  },
+  {
+    "id": "fake-581467",
+    "title": "Sample Apartment",
+    "buyingPrice": 401388,
+    "pricePerSqm": 4316,
+    "squareMeter": 93,
+    "region": "BY",
+    "apartmentType": "Apartment",
+    "rooms": 2,
+    "constructionYear": 1969,
+    "energyEfficiencyClass": "A",
+    "active": true,
+    "locationFactor": {
+      "population": 337785,
+      "unemploymentRate": 6.3
+    }
+  },
+  {
+    "id": "fake-184548",
+    "title": "Sample Apartment",
+    "buyingPrice": 230180,
+    "pricePerSqm": 2708,
+    "squareMeter": 85,
+    "region": "BY",
+    "apartmentType": "Maisonette",
+    "rooms": 2,
+    "constructionYear": 2008,
+    "energyEfficiencyClass": "G",
+    "active": true,
+    "locationFactor": {
+      "population": 2622307,
+      "unemploymentRate": 7.6
+    }
+  },
+  {
+    "id": "fake-112251",
+    "title": "Sample Apartment",
+    "buyingPrice": 318528,
+    "pricePerSqm": 9954,
+    "squareMeter": 32,
+    "region": "BE",
+    "apartmentType": "Apartment",
+    "rooms": 5,
+    "constructionYear": 1996,
+    "energyEfficiencyClass": "G",
+    "active": true,
+    "locationFactor": {
+      "population": 2493922,
+      "unemploymentRate": 9.4
+    }
+  },
+  {
+    "id": "fake-993403",
+    "title": "Sample Apartment",
+    "buyingPrice": 758656,
+    "pricePerSqm": 11854,
+    "squareMeter": 64,
+    "region": "HH",
+    "apartmentType": "Apartment",
+    "rooms": 1,
+    "constructionYear": 2019,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 2804531,
+      "unemploymentRate": 7.9
+    }
+  },
+  {
+    "id": "fake-893253",
+    "title": "Sample Apartment",
+    "buyingPrice": 420168,
+    "pricePerSqm": 7503,
+    "squareMeter": 56,
+    "region": "HE",
+    "apartmentType": "Maisonette",
+    "rooms": 1,
+    "constructionYear": 1973,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 594616,
+      "unemploymentRate": 4.2
+    }
+  },
+  {
+    "id": "fake-407015",
+    "title": "Sample Apartment",
+    "buyingPrice": 583362,
+    "pricePerSqm": 7202,
+    "squareMeter": 81,
+    "region": "HH",
+    "apartmentType": "Maisonette",
+    "rooms": 1,
+    "constructionYear": 1996,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 2995826,
+      "unemploymentRate": 3.6
+    }
+  },
+  {
+    "id": "fake-980981",
+    "title": "Sample Apartment",
+    "buyingPrice": 93027,
+    "pricePerSqm": 2819,
+    "squareMeter": 33,
+    "region": "BW",
+    "apartmentType": "Penthouse",
+    "rooms": 5,
+    "constructionYear": 1968,
+    "energyEfficiencyClass": "A",
+    "active": true,
+    "locationFactor": {
+      "population": 415890,
+      "unemploymentRate": 2.0
+    }
+  },
+  {
+    "id": "fake-307241",
+    "title": "Sample Apartment",
+    "buyingPrice": 1110899,
+    "pricePerSqm": 10999,
+    "squareMeter": 101,
+    "region": "NW",
+    "apartmentType": "Maisonette",
+    "rooms": 1,
+    "constructionYear": 1970,
+    "energyEfficiencyClass": "C",
+    "active": true,
+    "locationFactor": {
+      "population": 409837,
+      "unemploymentRate": 5.8
+    }
+  },
+  {
+    "id": "fake-103654",
+    "title": "Sample Apartment",
+    "buyingPrice": 355607,
+    "pricePerSqm": 9611,
+    "squareMeter": 37,
+    "region": "HH",
+    "apartmentType": "Maisonette",
+    "rooms": 1,
+    "constructionYear": 1960,
+    "energyEfficiencyClass": "C",
+    "active": true,
+    "locationFactor": {
+      "population": 2327492,
+      "unemploymentRate": 4.1
+    }
+  },
+  {
+    "id": "fake-174618",
+    "title": "Sample Apartment",
+    "buyingPrice": 952160,
+    "pricePerSqm": 8656,
+    "squareMeter": 110,
+    "region": "BW",
+    "apartmentType": "Maisonette",
+    "rooms": 5,
+    "constructionYear": 1962,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 2402932,
+      "unemploymentRate": 7.1
+    }
+  },
+  {
+    "id": "fake-947980",
+    "title": "Sample Apartment",
+    "buyingPrice": 865980,
+    "pricePerSqm": 10188,
+    "squareMeter": 85,
+    "region": "HH",
+    "apartmentType": "Loft",
+    "rooms": 2,
+    "constructionYear": 2000,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 2776894,
+      "unemploymentRate": 7.1
+    }
+  },
+  {
+    "id": "fake-510873",
+    "title": "Sample Apartment",
+    "buyingPrice": 596919,
+    "pricePerSqm": 8651,
+    "squareMeter": 69,
+    "region": "BW",
+    "apartmentType": "Penthouse",
+    "rooms": 2,
+    "constructionYear": 1950,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 2018593,
+      "unemploymentRate": 7.6
+    }
+  },
+  {
+    "id": "fake-395730",
+    "title": "Sample Apartment",
+    "buyingPrice": 442827,
+    "pricePerSqm": 4473,
+    "squareMeter": 99,
+    "region": "BY",
+    "apartmentType": "Loft",
+    "rooms": 1,
+    "constructionYear": 1997,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 2491069,
+      "unemploymentRate": 7.9
+    }
+  },
+  {
+    "id": "fake-686363",
+    "title": "Sample Apartment",
+    "buyingPrice": 718479,
+    "pricePerSqm": 7407,
+    "squareMeter": 97,
+    "region": "NW",
+    "apartmentType": "Penthouse",
+    "rooms": 4,
+    "constructionYear": 1951,
+    "energyEfficiencyClass": "G",
+    "active": true,
+    "locationFactor": {
+      "population": 1496774,
+      "unemploymentRate": 4.4
+    }
+  },
+  {
+    "id": "fake-302255",
+    "title": "Sample Apartment",
+    "buyingPrice": 332640,
+    "pricePerSqm": 3360,
+    "squareMeter": 99,
+    "region": "NW",
+    "apartmentType": "Apartment",
+    "rooms": 5,
+    "constructionYear": 1996,
+    "energyEfficiencyClass": "B",
+    "active": true,
+    "locationFactor": {
+      "population": 1413745,
+      "unemploymentRate": 5.6
+    }
+  },
+  {
+    "id": "fake-356389",
+    "title": "Sample Apartment",
+    "buyingPrice": 551430,
+    "pricePerSqm": 6127,
+    "squareMeter": 90,
+    "region": "HH",
+    "apartmentType": "Apartment",
+    "rooms": 4,
+    "constructionYear": 1986,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 1715573,
+      "unemploymentRate": 4.3
+    }
+  },
+  {
+    "id": "fake-307086",
+    "title": "Sample Apartment",
+    "buyingPrice": 955395,
+    "pricePerSqm": 9099,
+    "squareMeter": 105,
+    "region": "BE",
+    "apartmentType": "Penthouse",
+    "rooms": 5,
+    "constructionYear": 1996,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 2524973,
+      "unemploymentRate": 9.1
+    }
+  },
+  {
+    "id": "fake-699837",
+    "title": "Sample Apartment",
+    "buyingPrice": 764286,
+    "pricePerSqm": 6477,
+    "squareMeter": 118,
+    "region": "BY",
+    "apartmentType": "Loft",
+    "rooms": 2,
+    "constructionYear": 1966,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 1819195,
+      "unemploymentRate": 7.8
+    }
+  },
+  {
+    "id": "fake-146641",
+    "title": "Sample Apartment",
+    "buyingPrice": 1218048,
+    "pricePerSqm": 11712,
+    "squareMeter": 104,
+    "region": "HE",
+    "apartmentType": "Loft",
+    "rooms": 4,
+    "constructionYear": 2012,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 2571384,
+      "unemploymentRate": 8.7
+    }
+  },
+  {
+    "id": "fake-776131",
+    "title": "Sample Apartment",
+    "buyingPrice": 437360,
+    "pricePerSqm": 5467,
+    "squareMeter": 80,
+    "region": "BY",
+    "apartmentType": "Loft",
+    "rooms": 3,
+    "constructionYear": 1971,
+    "energyEfficiencyClass": "A",
+    "active": true,
+    "locationFactor": {
+      "population": 2129809,
+      "unemploymentRate": 7.9
+    }
+  },
+  {
+    "id": "fake-645263",
+    "title": "Sample Apartment",
+    "buyingPrice": 791896,
+    "pricePerSqm": 10024,
+    "squareMeter": 79,
+    "region": "NW",
+    "apartmentType": "Loft",
+    "rooms": 4,
+    "constructionYear": 1993,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 2714766,
+      "unemploymentRate": 9.4
+    }
+  },
+  {
+    "id": "fake-650187",
+    "title": "Sample Apartment",
+    "buyingPrice": 209715,
+    "pricePerSqm": 6355,
+    "squareMeter": 33,
+    "region": "BW",
+    "apartmentType": "Penthouse",
+    "rooms": 3,
+    "constructionYear": 1975,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 1889275,
+      "unemploymentRate": 4.9
+    }
+  },
+  {
+    "id": "fake-987788",
+    "title": "Sample Apartment",
+    "buyingPrice": 388830,
+    "pricePerSqm": 5982,
+    "squareMeter": 65,
+    "region": "NW",
+    "apartmentType": "Maisonette",
+    "rooms": 5,
+    "constructionYear": 1999,
+    "energyEfficiencyClass": "A",
+    "active": true,
+    "locationFactor": {
+      "population": 2938211,
+      "unemploymentRate": 2.4
+    }
+  },
+  {
+    "id": "fake-245074",
+    "title": "Sample Apartment",
+    "buyingPrice": 517914,
+    "pricePerSqm": 7506,
+    "squareMeter": 69,
+    "region": "HE",
+    "apartmentType": "Loft",
+    "rooms": 4,
+    "constructionYear": 1961,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 1057199,
+      "unemploymentRate": 6.5
+    }
+  },
+  {
+    "id": "fake-865008",
+    "title": "Sample Apartment",
+    "buyingPrice": 270135,
+    "pricePerSqm": 3915,
+    "squareMeter": 69,
+    "region": "HH",
+    "apartmentType": "Apartment",
+    "rooms": 2,
+    "constructionYear": 1968,
+    "energyEfficiencyClass": "A",
+    "active": true,
+    "locationFactor": {
+      "population": 2168005,
+      "unemploymentRate": 4.5
+    }
+  },
+  {
+    "id": "fake-836102",
+    "title": "Sample Apartment",
+    "buyingPrice": 180480,
+    "pricePerSqm": 4512,
+    "squareMeter": 40,
+    "region": "HH",
+    "apartmentType": "Loft",
+    "rooms": 4,
+    "constructionYear": 2022,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 2742906,
+      "unemploymentRate": 6.3
+    }
+  },
+  {
+    "id": "fake-190186",
+    "title": "Sample Apartment",
+    "buyingPrice": 505967,
+    "pricePerSqm": 6571,
+    "squareMeter": 77,
+    "region": "HE",
+    "apartmentType": "Maisonette",
+    "rooms": 4,
+    "constructionYear": 1991,
+    "energyEfficiencyClass": "A",
+    "active": true,
+    "locationFactor": {
+      "population": 1866187,
+      "unemploymentRate": 6.6
+    }
+  },
+  {
+    "id": "fake-152821",
+    "title": "Sample Apartment",
+    "buyingPrice": 587523,
+    "pricePerSqm": 7437,
+    "squareMeter": 79,
+    "region": "BW",
+    "apartmentType": "Apartment",
+    "rooms": 4,
+    "constructionYear": 1961,
+    "energyEfficiencyClass": "A",
+    "active": true,
+    "locationFactor": {
+      "population": 1074870,
+      "unemploymentRate": 3.3
+    }
+  },
+  {
+    "id": "fake-406387",
+    "title": "Sample Apartment",
+    "buyingPrice": 631476,
+    "pricePerSqm": 11694,
+    "squareMeter": 54,
+    "region": "HH",
+    "apartmentType": "Maisonette",
+    "rooms": 1,
+    "constructionYear": 2009,
+    "energyEfficiencyClass": "C",
+    "active": true,
+    "locationFactor": {
+      "population": 2958346,
+      "unemploymentRate": 7.1
+    }
+  },
+  {
+    "id": "fake-820937",
+    "title": "Sample Apartment",
+    "buyingPrice": 264252,
+    "pricePerSqm": 4636,
+    "squareMeter": 57,
+    "region": "HH",
+    "apartmentType": "Penthouse",
+    "rooms": 4,
+    "constructionYear": 1990,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 543575,
+      "unemploymentRate": 8.8
+    }
+  },
+  {
+    "id": "fake-889621",
+    "title": "Sample Apartment",
+    "buyingPrice": 412844,
+    "pricePerSqm": 7118,
+    "squareMeter": 58,
+    "region": "BY",
+    "apartmentType": "Loft",
+    "rooms": 4,
+    "constructionYear": 2002,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 860201,
+      "unemploymentRate": 7.5
+    }
+  },
+  {
+    "id": "fake-458465",
+    "title": "Sample Apartment",
+    "buyingPrice": 277750,
+    "pricePerSqm": 5050,
+    "squareMeter": 55,
+    "region": "BE",
+    "apartmentType": "Loft",
+    "rooms": 1,
+    "constructionYear": 1991,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 2784590,
+      "unemploymentRate": 5.9
+    }
+  },
+  {
+    "id": "fake-918339",
+    "title": "Sample Apartment",
+    "buyingPrice": 766476,
+    "pricePerSqm": 7097,
+    "squareMeter": 108,
+    "region": "BY",
+    "apartmentType": "Penthouse",
+    "rooms": 5,
+    "constructionYear": 2004,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 1870196,
+      "unemploymentRate": 9.9
+    }
+  },
+  {
+    "id": "fake-570560",
+    "title": "Sample Apartment",
+    "buyingPrice": 373395,
+    "pricePerSqm": 11315,
+    "squareMeter": 33,
+    "region": "BE",
+    "apartmentType": "Maisonette",
+    "rooms": 4,
+    "constructionYear": 2002,
+    "energyEfficiencyClass": "G",
+    "active": true,
+    "locationFactor": {
+      "population": 2769274,
+      "unemploymentRate": 2.1
+    }
+  },
+  {
+    "id": "fake-924056",
+    "title": "Sample Apartment",
+    "buyingPrice": 505008,
+    "pricePerSqm": 8016,
+    "squareMeter": 63,
+    "region": "HH",
+    "apartmentType": "Apartment",
+    "rooms": 1,
+    "constructionYear": 1961,
+    "energyEfficiencyClass": "A",
+    "active": true,
+    "locationFactor": {
+      "population": 2107029,
+      "unemploymentRate": 8.6
+    }
+  },
+  {
+    "id": "fake-535947",
+    "title": "Sample Apartment",
+    "buyingPrice": 558000,
+    "pricePerSqm": 6200,
+    "squareMeter": 90,
+    "region": "BE",
+    "apartmentType": "Loft",
+    "rooms": 2,
+    "constructionYear": 1968,
+    "energyEfficiencyClass": "G",
+    "active": true,
+    "locationFactor": {
+      "population": 2721866,
+      "unemploymentRate": 3.5
+    }
+  },
+  {
+    "id": "fake-784447",
+    "title": "Sample Apartment",
+    "buyingPrice": 127264,
+    "pricePerSqm": 3977,
+    "squareMeter": 32,
+    "region": "NW",
+    "apartmentType": "Maisonette",
+    "rooms": 5,
+    "constructionYear": 1986,
+    "energyEfficiencyClass": "G",
+    "active": true,
+    "locationFactor": {
+      "population": 245713,
+      "unemploymentRate": 10.0
+    }
+  },
+  {
+    "id": "fake-192427",
+    "title": "Sample Apartment",
+    "buyingPrice": 582120,
+    "pricePerSqm": 9702,
+    "squareMeter": 60,
+    "region": "BY",
+    "apartmentType": "Penthouse",
+    "rooms": 3,
+    "constructionYear": 1982,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 210560,
+      "unemploymentRate": 6.1
+    }
+  },
+  {
+    "id": "fake-268248",
+    "title": "Sample Apartment",
+    "buyingPrice": 104916,
+    "pricePerSqm": 3747,
+    "squareMeter": 28,
+    "region": "BY",
+    "apartmentType": "Loft",
+    "rooms": 1,
+    "constructionYear": 1977,
+    "energyEfficiencyClass": "A",
+    "active": true,
+    "locationFactor": {
+      "population": 2012718,
+      "unemploymentRate": 3.9
+    }
+  },
+  {
+    "id": "fake-686760",
+    "title": "Sample Apartment",
+    "buyingPrice": 166750,
+    "pricePerSqm": 2875,
+    "squareMeter": 58,
+    "region": "HH",
+    "apartmentType": "Loft",
+    "rooms": 4,
+    "constructionYear": 1994,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 1007128,
+      "unemploymentRate": 10.0
+    }
+  },
+  {
+    "id": "fake-224887",
+    "title": "Sample Apartment",
+    "buyingPrice": 610736,
+    "pricePerSqm": 5453,
+    "squareMeter": 112,
+    "region": "BW",
+    "apartmentType": "Penthouse",
+    "rooms": 1,
+    "constructionYear": 1993,
+    "energyEfficiencyClass": "B",
+    "active": true,
+    "locationFactor": {
+      "population": 1950260,
+      "unemploymentRate": 2.6
+    }
+  },
+  {
+    "id": "fake-373364",
+    "title": "Sample Apartment",
+    "buyingPrice": 1269216,
+    "pricePerSqm": 11232,
+    "squareMeter": 113,
+    "region": "HE",
+    "apartmentType": "Apartment",
+    "rooms": 2,
+    "constructionYear": 1954,
+    "energyEfficiencyClass": "G",
+    "active": true,
+    "locationFactor": {
+      "population": 829459,
+      "unemploymentRate": 5.0
+    }
+  },
+  {
+    "id": "fake-751712",
+    "title": "Sample Apartment",
+    "buyingPrice": 732360,
+    "pricePerSqm": 8616,
+    "squareMeter": 85,
+    "region": "HE",
+    "apartmentType": "Penthouse",
+    "rooms": 3,
+    "constructionYear": 2012,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 2650737,
+      "unemploymentRate": 3.7
+    }
+  },
+  {
+    "id": "fake-876309",
+    "title": "Sample Apartment",
+    "buyingPrice": 204608,
+    "pricePerSqm": 6394,
+    "squareMeter": 32,
+    "region": "HH",
+    "apartmentType": "Maisonette",
+    "rooms": 1,
+    "constructionYear": 2022,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 1823415,
+      "unemploymentRate": 9.8
+    }
+  },
+  {
+    "id": "fake-301197",
+    "title": "Sample Apartment",
+    "buyingPrice": 760227,
+    "pricePerSqm": 7527,
+    "squareMeter": 101,
+    "region": "NW",
+    "apartmentType": "Penthouse",
+    "rooms": 5,
+    "constructionYear": 1963,
+    "energyEfficiencyClass": "C",
+    "active": true,
+    "locationFactor": {
+      "population": 2882880,
+      "unemploymentRate": 8.7
+    }
+  },
+  {
+    "id": "fake-341513",
+    "title": "Sample Apartment",
+    "buyingPrice": 207675,
+    "pricePerSqm": 8307,
+    "squareMeter": 25,
+    "region": "NW",
+    "apartmentType": "Apartment",
+    "rooms": 3,
+    "constructionYear": 1955,
+    "energyEfficiencyClass": "C",
+    "active": true,
+    "locationFactor": {
+      "population": 555884,
+      "unemploymentRate": 6.5
+    }
+  },
+  {
+    "id": "fake-441604",
+    "title": "Sample Apartment",
+    "buyingPrice": 509291,
+    "pricePerSqm": 4507,
+    "squareMeter": 113,
+    "region": "BW",
+    "apartmentType": "Penthouse",
+    "rooms": 3,
+    "constructionYear": 2002,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 726275,
+      "unemploymentRate": 2.7
+    }
+  },
+  {
+    "id": "fake-632272",
+    "title": "Sample Apartment",
+    "buyingPrice": 938013,
+    "pricePerSqm": 8301,
+    "squareMeter": 113,
+    "region": "HH",
+    "apartmentType": "Penthouse",
+    "rooms": 3,
+    "constructionYear": 2023,
+    "energyEfficiencyClass": "B",
+    "active": true,
+    "locationFactor": {
+      "population": 121523,
+      "unemploymentRate": 9.1
+    }
+  },
+  {
+    "id": "fake-160373",
+    "title": "Sample Apartment",
+    "buyingPrice": 489190,
+    "pricePerSqm": 4615,
+    "squareMeter": 106,
+    "region": "HH",
+    "apartmentType": "Loft",
+    "rooms": 2,
+    "constructionYear": 2003,
+    "energyEfficiencyClass": "C",
+    "active": true,
+    "locationFactor": {
+      "population": 2545740,
+      "unemploymentRate": 2.7
+    }
+  },
+  {
+    "id": "fake-643978",
+    "title": "Sample Apartment",
+    "buyingPrice": 750165,
+    "pricePerSqm": 11541,
+    "squareMeter": 65,
+    "region": "BW",
+    "apartmentType": "Loft",
+    "rooms": 2,
+    "constructionYear": 1999,
+    "energyEfficiencyClass": "G",
+    "active": true,
+    "locationFactor": {
+      "population": 2094095,
+      "unemploymentRate": 9.8
+    }
+  },
+  {
+    "id": "fake-557589",
+    "title": "Sample Apartment",
+    "buyingPrice": 854572,
+    "pricePerSqm": 8062,
+    "squareMeter": 106,
+    "region": "NW",
+    "apartmentType": "Penthouse",
+    "rooms": 4,
+    "constructionYear": 1967,
+    "energyEfficiencyClass": "G",
+    "active": true,
+    "locationFactor": {
+      "population": 2094087,
+      "unemploymentRate": 7.6
+    }
+  },
+  {
+    "id": "fake-172329",
+    "title": "Sample Apartment",
+    "buyingPrice": 448857,
+    "pricePerSqm": 8469,
+    "squareMeter": 53,
+    "region": "HH",
+    "apartmentType": "Loft",
+    "rooms": 4,
+    "constructionYear": 1991,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 2978051,
+      "unemploymentRate": 5.2
+    }
+  },
+  {
+    "id": "fake-940625",
+    "title": "Sample Apartment",
+    "buyingPrice": 208737,
+    "pricePerSqm": 7731,
+    "squareMeter": 27,
+    "region": "BE",
+    "apartmentType": "Apartment",
+    "rooms": 2,
+    "constructionYear": 1959,
+    "energyEfficiencyClass": "C",
+    "active": true,
+    "locationFactor": {
+      "population": 1799816,
+      "unemploymentRate": 6.0
+    }
+  },
+  {
+    "id": "fake-974929",
+    "title": "Sample Apartment",
+    "buyingPrice": 410187,
+    "pricePerSqm": 5619,
+    "squareMeter": 73,
+    "region": "HH",
+    "apartmentType": "Apartment",
+    "rooms": 5,
+    "constructionYear": 1999,
+    "energyEfficiencyClass": "B",
+    "active": true,
+    "locationFactor": {
+      "population": 1376220,
+      "unemploymentRate": 5.6
+    }
+  },
+  {
+    "id": "fake-261957",
+    "title": "Sample Apartment",
+    "buyingPrice": 664480,
+    "pricePerSqm": 8306,
+    "squareMeter": 80,
+    "region": "NW",
+    "apartmentType": "Maisonette",
+    "rooms": 1,
+    "constructionYear": 1976,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 1518408,
+      "unemploymentRate": 4.4
+    }
+  },
+  {
+    "id": "fake-830666",
+    "title": "Sample Apartment",
+    "buyingPrice": 199276,
+    "pricePerSqm": 4529,
+    "squareMeter": 44,
+    "region": "NW",
+    "apartmentType": "Maisonette",
+    "rooms": 4,
+    "constructionYear": 1990,
+    "energyEfficiencyClass": "A",
+    "active": true,
+    "locationFactor": {
+      "population": 2272884,
+      "unemploymentRate": 6.5
+    }
+  },
+  {
+    "id": "fake-436020",
+    "title": "Sample Apartment",
+    "buyingPrice": 1250596,
+    "pricePerSqm": 10781,
+    "squareMeter": 116,
+    "region": "BE",
+    "apartmentType": "Maisonette",
+    "rooms": 3,
+    "constructionYear": 2000,
+    "energyEfficiencyClass": "F",
+    "active": true,
+    "locationFactor": {
+      "population": 2307354,
+      "unemploymentRate": 9.6
+    }
+  },
+  {
+    "id": "fake-843708",
+    "title": "Sample Apartment",
+    "buyingPrice": 741376,
+    "pricePerSqm": 11584,
+    "squareMeter": 64,
+    "region": "NW",
+    "apartmentType": "Penthouse",
+    "rooms": 4,
+    "constructionYear": 1954,
+    "energyEfficiencyClass": "E",
+    "active": true,
+    "locationFactor": {
+      "population": 506215,
+      "unemploymentRate": 2.5
+    }
+  },
+  {
+    "id": "fake-618265",
+    "title": "Sample Apartment",
+    "buyingPrice": 991186,
+    "pricePerSqm": 11942,
+    "squareMeter": 83,
+    "region": "BY",
+    "apartmentType": "Maisonette",
+    "rooms": 4,
+    "constructionYear": 2018,
+    "energyEfficiencyClass": "G",
+    "active": true,
+    "locationFactor": {
+      "population": 600307,
+      "unemploymentRate": 8.0
+    }
+  },
+  {
+    "id": "fake-932919",
+    "title": "Sample Apartment",
+    "buyingPrice": 924635,
+    "pricePerSqm": 9733,
+    "squareMeter": 95,
+    "region": "HH",
+    "apartmentType": "Maisonette",
+    "rooms": 2,
+    "constructionYear": 1977,
+    "energyEfficiencyClass": "D",
+    "active": true,
+    "locationFactor": {
+      "population": 2953382,
+      "unemploymentRate": 4.7
+    }
+  },
+  {
+    "id": "fake-312371",
+    "title": "Sample Apartment",
+    "buyingPrice": 353738,
+    "pricePerSqm": 4594,
+    "squareMeter": 77,
+    "region": "BY",
+    "apartmentType": "Apartment",
+    "rooms": 5,
+    "constructionYear": 2018,
+    "energyEfficiencyClass": "A",
+    "active": true,
+    "locationFactor": {
+      "population": 1904777,
+      "unemploymentRate": 2.4
+    }
+  },
+  {
+    "id": "fake-786703",
+    "title": "Sample Apartment",
+    "buyingPrice": 334656,
+    "pricePerSqm": 5229,
+    "squareMeter": 64,
+    "region": "BE",
+    "apartmentType": "Maisonette",
+    "rooms": 2,
+    "constructionYear": 1964,
+    "energyEfficiencyClass": "C",
+    "active": true,
+    "locationFactor": {
+      "population": 474099,
+      "unemploymentRate": 3.1
+    }
+  },
+  {
+    "id": "fake-196867",
+    "title": "Sample Apartment",
+    "buyingPrice": 328358,
+    "pricePerSqm": 8641,
+    "squareMeter": 38,
+    "region": "HE",
+    "apartmentType": "Apartment",
+    "rooms": 1,
+    "constructionYear": 1960,
+    "energyEfficiencyClass": "A",
+    "active": true,
+    "locationFactor": {
+      "population": 336674,
+      "unemploymentRate": 9.9
+    }
+  },
+  {
+    "id": "fake-652346",
+    "title": "Sample Apartment",
+    "buyingPrice": 596700,
+    "pricePerSqm": 9945,
+    "squareMeter": 60,
+    "region": "BY",
+    "apartmentType": "Penthouse",
+    "rooms": 2,
+    "constructionYear": 1975,
+    "energyEfficiencyClass": "B",
+    "active": true,
+    "locationFactor": {
+      "population": 2788581,
+      "unemploymentRate": 8.4
+    }
+  }
+]
