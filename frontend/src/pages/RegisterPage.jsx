@@ -39,7 +39,8 @@ function RegisterPage() {
 
       if (!res.ok) {
         const errBody = await res.json().catch(() => ({}));
-        const message = errBody.message || "Registration failed";
+        // backend returns { error: '...' } but some handlers may use { message: '...' }
+        const message = errBody.error || errBody.message || "Registration failed";
         throw new Error(message);
       }
 
