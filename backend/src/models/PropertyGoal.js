@@ -1,8 +1,9 @@
 // models/PropertyGoal.js
 
 class PropertyGoal {
-    constructor({ type, rooms, size, city, basePrice }) {
+    constructor({ type, region, rooms, size, city, basePrice }) {
         this.type = type;  // 'house' or 'apartment'
+        this.region = region;
         this.rooms = rooms;
         this.size = size; // m²
         this.city = city;
