@@ -5,14 +5,27 @@ export async function createAvatarController(req, res) {
         const user = req.user;
         if (!user) return res.status(401).json({ error: "Unauthorized" });
 
+        // dev-only logging of incoming body (do not log sensitive data in production)
+        if (process.env.NODE_ENV !== 'production') {
+            try {
+                console.debug('[createAvatar] user:', { id: user.id, username: user.username });
+                console.debug('[createAvatar] body:', req.body);
+            } catch (e) {
+                console.debug('[createAvatar] failed to log payload');
+            }
+        }
+
         const payload = {
-            user_id: user.id,
+            userId: user.id,
             name: req.body.name,
             gender: req.body.gender,
             age: req.body.age,
+            educationLevel: req.body.educationLevel,
+            educationField: req.body.educationField,
             occupation: req.body.occupation,
             income: req.body.income,
-            savings: req.body.savings
+            savings: req.body.savings,
+            debt: req.body.debt,
         };
 
         const avatar = await createAvatar(payload);

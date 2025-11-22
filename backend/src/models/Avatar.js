@@ -1,22 +1,24 @@
 // models/Avatar.js
 
 class Avatar {
-    constructor({ id, userId, name, gender, age, educationLevel, educationField, occupation, savings, income, debt}) {
-        this.id = id;
-        this.userId = userId;
-        this.name = name;
-        this.gender = gender;
-        this.age = age;
-        this.educationLevel = educationLevel;
-        this.educationField = educationField;
-        this.occupation = occupation;
-        this.savings = savings;
-        this.income = income; // monthly income
-        this.debt = debt; // total debt amount
+    constructor(obj = {}) {
+        // support both snake_case (from DB) and camelCase (from code)
+        this.id = obj.id || obj.ID || null;
+        this.userId = obj.user_id || obj.userId || null;
+        this.name = obj.name || null;
+        this.gender = obj.gender || null;
+        this.age = obj.age || null;
+        this.educationLevel = obj.education_level || obj.educationLevel || obj.education || null;
+        this.educationField = obj.education_field || obj.educationField || null;
+        this.occupation = obj.occupation || null;
+        this.savings = obj.savings != null ? obj.savings : 0;
+        this.income = obj.income != null ? obj.income : 0; // monthly income
+        this.debt = obj.debt != null ? obj.debt : 0; // total debt amount
+        this.createdAt = obj.created_at || obj.createdAt || null;
     }
 
     addSavings(amount) {
-        this.savings += amount;
+        this.savings = (this.savings || 0) + amount;
     }
 
     changeOccupation(newOccupation, newIncome) {
@@ -25,8 +27,8 @@ class Avatar {
     }
 
     getAnnualIncome() {
-        return this.income * 12;
+        return (this.income || 0) * 12;
     }
 }
 
-module.exports = Avatar;
+export default Avatar;

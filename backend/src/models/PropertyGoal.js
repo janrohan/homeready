@@ -20,4 +20,4 @@ class PropertyGoal {
     }
 }
 
-module.exports = PropertyGoal;
+export default PropertyGoal;

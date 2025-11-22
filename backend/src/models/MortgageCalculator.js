@@ -7,3 +7,5 @@ class MortgageCalculator {
     }
     
 }
+
+export default MortgageCalculator;

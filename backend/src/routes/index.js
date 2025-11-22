@@ -2,6 +2,7 @@ import express from "express";
 import avatarRoutes from "./avatar.route.js";
 import authRoutes from "./auth.route.js";
 import storyRoutes from "./story.route.js";
+import debugRoutes from "./debug.route.js";
 
 const router = express.Router();
 
@@ -13,5 +14,8 @@ router.use("/avatars", avatarRoutes);
 
 // story save/list
 router.use("/story", storyRoutes);
+
+// debug routes (dev only)
+router.use("/debug", debugRoutes);
 
 export default router;

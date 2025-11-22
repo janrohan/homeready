@@ -302,8 +302,16 @@ function AvatarSetup() {
     navigate("/app/story");
   }
 
-  function handleAvatarCompleted() {
-    navigate("/app/story");
+  async function handleAvatarCompleted() {
+    setError("");
+    try {
+      const success = await submitAvatar();
+      if (success) {
+        navigate("/app/story");
+      }
+    } catch (err) {
+      setError(err.message || String(err));
+    }
   }
 
   // -----------------------------
@@ -599,39 +607,57 @@ function AvatarSetup() {
     </div>
   );
 
-  async function handleSubmit(e) {
-    e.preventDefault();
-    setError("");
+  async function submitAvatar() {
+    // returns true on success, throws on error
+    const response = await fetch("/api/avatars/createAvatar", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${localStorage.getItem("authToken")}`,
+      },
+      body: JSON.stringify({
+        name: name,
+        gender: gender,
+        age: Number(age),
+        educationLevel: educationLevel,
+        educationField: educationField,
+        occupation: occupationCategory,
+        income: Number(startingIncome),
+        savings: Number(savings),
+        debt: Number(debt),
+      }),
+    });
 
+    if (!response.ok) {
+      const errBody = await response.json().catch(() => ({}));
+      const message = errBody.error || errBody.message || "Error creating avatar";
+      throw new Error(message);
+    }
+
+    // Try to parse created avatar and save to localStorage so overview can show it
     try {
-      const response = await fetch("/api/avatars/createAvatar", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Authorization": `Bearer ${localStorage.getItem("authToken")}`,
-        },
-        body: JSON.stringify({
-          name, 
-          gender,
-          age: Number(age),
-          education,
-          educationField,
-          occupation,
-          income: Number(income),
-          savings: Number(savings),
-          debt: Number(debt),
-        }),
-      });
-
-      if (!response.ok) {
-        const errBody = await response.json().catch(() => ({}));
-        const message = errBody.error || errBody.message || "Error creating avatar";
-        throw new Error(message);
+      const created = await response.json();
+      const stored = localStorage.getItem("avatars");
+      let list = stored ? JSON.parse(stored) : [];
+      // If the backend returns an object wrapper, try to extract the avatar
+      const avatarObj = Array.isArray(created) ? created[0] : (created.avatar || created);
+      // push if it has an id
+      if (avatarObj && avatarObj.id) {
+        list = [avatarObj, ...list];
+        localStorage.setItem("avatars", JSON.stringify(list));
       }
+    } catch (err) {
+      // ignore parse errors
+    }
 
-      console.log("Avatar created successfully");
+    return true;
+  }
 
-      // On success, navigate to next step
+  async function handleSubmit(e) {
+    e && e.preventDefault();
+    setError("");
+    try {
+      await submitAvatar();
       navigate("/avatar/questions");
     } catch (error) {
       setError(error.message);

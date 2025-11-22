@@ -6,6 +6,16 @@ const JWT_SECRET = process.env.JWT_SECRET || 'change-this-secret';
 export default async function auth(req, res, next) {
     try {
         const authHeader = req.headers.authorization;
+        // dev-only logging to help diagnose missing token issues
+        if (process.env.NODE_ENV !== 'production') {
+            try {
+                const masked = authHeader ? authHeader.replace(/Bearer\s+(.{4}).+(.{4})/, 'Bearer $1...$2') : '<none>';
+                console.debug('[auth] Authorization header:', masked);
+            } catch (e) {
+                console.debug('[auth] Authorization header present but failed to mask');
+            }
+        }
+
         if (!authHeader || !authHeader.startsWith('Bearer ')) return res.status(401).json({ error: 'Missing token' });
 
         const token = authHeader.split(' ')[1];
