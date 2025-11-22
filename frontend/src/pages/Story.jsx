@@ -1,28 +1,9 @@
 // src/pages/Story.jsx
 import { useState, useMemo, useEffect } from "react";
 import avatarImg from "../assets/male_1.png";
+import roadmapImg from "../assets/roadmap_2.png"; // your 1920x1080 background
 
-// High-level roadmap milestones for the game view
-const roadmapMilestones = [
-  { id: "education", label: "Education" },
-  { id: "career", label: "Career" },
-  { id: "family", label: "Family" },
-  { id: "summary", label: "Summary" },
-];
-
-// Map detailed steps to high-level milestones
-const stepToMilestone = {
-  educationLevel: "education",
-  bachelorProgram: "education",
-  masterOption: "education",
-  apprenticeshipProgram: "education",
-  educationDoneInterlude: "education",
-  jobChoice: "career",
-  childrenChoice: "family",
-  storyEnd: "summary",
-};
-
-// Story configuration
+// ----- Story Configuration -----
 const storySteps = {
   educationLevel: {
     id: "educationLevel",
@@ -39,8 +20,6 @@ const storySteps = {
       if (choiceId === "apprenticeship") return "apprenticeshipProgram";
       return "educationDoneInterlude";
     },
-    avatarText:
-      "Education can increase your income – but it also costs time and money. Let’s see what you pick.",
   },
 
   bachelorProgram: {
@@ -53,57 +32,45 @@ const storySteps = {
       { id: "arts", label: "Arts & Humanities" },
     ],
     next: () => "masterOption",
-    avatarText:
-      "Different fields lead to different salaries. Tech and business often have strong earning potential.",
   },
 
   masterOption: {
     id: "masterOption",
     title: "Do you want to do a Master’s degree?",
     description:
-      "A Master’s can boost your income, but it also means more years without full-time salary.",
+      "A Master’s gives you more income potential but delays full-time earnings.",
     options: [
       { id: "master_yes", label: "Yes, I’ll do a Master" },
       { id: "master_no", label: "No, Bachelor is enough" },
     ],
     next: () => "educationDoneInterlude",
-    avatarText:
-      "More education usually means higher long-term income – but also more study years and costs.",
   },
 
   apprenticeshipProgram: {
     id: "apprenticeshipProgram",
     title: "Choose your apprenticeship",
-    description: "Pick the path that fits you best.",
+    description: "Pick the craft that fits you best.",
     options: [
-      { id: "carpenter", label: "Carpenter training" },
-      { id: "mechatronics", label: "Mechatronics technician training" },
-      { id: "electrician", label: "Electrician training" },
+      { id: "carpenter", label: "Carpenter" },
+      { id: "mechatronics", label: "Mechatronics Technician" },
+      { id: "electrician", label: "Electrician" },
     ],
     next: () => "educationDoneInterlude",
-    avatarText:
-      "Apprenticeships let you earn earlier, but with a different long-term salary curve.",
   },
 
   educationDoneInterlude: {
     id: "educationDoneInterlude",
     type: "info",
     title: "Congrats! You finished your education 🎓",
-    description:
-      "Nice! Your education journey is complete. Next, we’ll see how your career impacts your home ownership path.",
+    description: "Next: Your career path!",
     next: () => "jobChoice",
-    avatarText:
-      "Education is done – time to earn money, save, and build your path towards your own place.",
   },
 
   jobChoice: {
     id: "jobChoice",
-    dynamic: true, // options depend on previous choices
+    dynamic: true,
     title: "Choose your job",
-    description:
-      "Your job decides your income, stability and how much you can save for your future home.",
-    avatarText:
-      "Income, stability, and growth potential all play a role in your mortgage readiness.",
+    description: "Your job affects your income and savings potential.",
     next: () => "childrenChoice",
   },
 
@@ -111,14 +78,12 @@ const storySteps = {
     id: "childrenChoice",
     title: "Do you want children?",
     description:
-      "Children are amazing – but they also change your expenses and savings potential.",
+      "Children change your monthly expenses — choose what fits your story.",
     options: [
-      { id: "children_yes", label: "Yes, I want children" },
-      { id: "children_no", label: "No, I don’t want children" },
+      { id: "children_yes", label: "Yes" },
+      { id: "children_no", label: "No" },
     ],
     next: () => "storyEnd",
-    avatarText:
-      "Family decisions have a big impact on monthly costs and how fast you can save for a home.",
   },
 
   storyEnd: {
@@ -126,17 +91,27 @@ const storySteps = {
     type: "info",
     title: "Story segment complete 🎉",
     description:
-      "Great work! In the next steps, we’ll show how your choices impact your home goal and mortgage potential.",
+      "We can now calculate the impact of your decisions on your mortgage readiness.",
     next: null,
-    avatarText:
-      "You’ve built your initial life path. We can now translate that into numbers for your home journey.",
   },
 };
 
-// Job options depending on education path
+// ----- Ordering for progress bar -----
+const stepOrder = [
+  "educationLevel",
+  "bachelorProgram",
+  "masterOption",
+  "apprenticeshipProgram",
+  "educationDoneInterlude",
+  "jobChoice",
+  "childrenChoice",
+  "storyEnd",
+];
+
+// ----- Dynamic Job Options -----
 const jobOptionsByEducation = {
   bachelor: [
-    { id: "junior_dev", label: "Junior Software Developer" },
+    { id: "junior_dev", label: "Junior Developer" },
     { id: "business_analyst", label: "Business Analyst" },
     { id: "marketing_specialist", label: "Marketing Specialist" },
   ],
@@ -157,18 +132,6 @@ const jobOptionsByEducation = {
   ],
 };
 
-// Rough step order for a simple progress bar
-const stepOrder = [
-  "educationLevel",
-  "bachelorProgram",
-  "masterOption",
-  "apprenticeshipProgram",
-  "educationDoneInterlude",
-  "jobChoice",
-  "childrenChoice",
-  "storyEnd",
-];
-
 const defaultStoryState = {
   educationLevel: null,
   bachelorProgram: null,
@@ -178,153 +141,98 @@ const defaultStoryState = {
   children: null,
 };
 
+// ----- Map Coordinates (for a 1920×1080 background) -----
+const mapCoordinates = {
+  educationLevel: { x: 250, y: 780 },
+  bachelorProgram: { x: 520, y: 720 },
+  masterOption: { x: 780, y: 650 },
+  apprenticeshipProgram: { x: 520, y: 720 },
+  educationDoneInterlude: { x: 1050, y: 620 },
+  jobChoice: { x: 1320, y: 600 },
+  childrenChoice: { x: 1580, y: 650 },
+  storyEnd: { x: 1820, y: 720 },
+};
+
 function Story() {
+  // track where we are in the story
   const [currentStepId, setCurrentStepId] = useState(() => {
-    const stored = localStorage.getItem("storyCurrentStepId");
-    return stored || "educationLevel";
+    return localStorage.getItem("storyCurrentStepId") || "educationLevel";
   });
+
+  // state for choices
   const [storyState, setStoryState] = useState(() => {
-    const stored = localStorage.getItem("storyState");
-    if (stored) {
-      try {
-        const parsed = JSON.parse(stored);
-        // mit Default-Werten mergen, falls später Felder hinzukommen
-        return { ...defaultStoryState, ...parsed };
-      } catch {
-        return defaultStoryState;
-      }
+    try {
+      const stored = JSON.parse(localStorage.getItem("storyState"));
+      return stored ? { ...defaultStoryState, ...stored } : defaultStoryState;
+    } catch {
+      return defaultStoryState;
     }
-    return defaultStoryState;
   });
+
+  // avatar position
+  const [avatarX, setAvatarX] = useState(0);
+  const [avatarY, setAvatarY] = useState(0);
 
   const step = storySteps[currentStepId];
 
-  const currentMilestoneIndex = useMemo(() => {
-    const milestoneId = stepToMilestone[currentStepId];
-    const idx = roadmapMilestones.findIndex((m) => m.id === milestoneId);
-    return idx === -1 ? 0 : idx;
+  // Progress %
+  const progressPercent = useMemo(() => {
+    const idx = stepOrder.indexOf(currentStepId);
+    if (idx === -1) return 0;
+    return Math.round(((idx + 1) / stepOrder.length) * 100);
   }, [currentStepId]);
 
-  async function sendStoryToBackend() {
-    try {
-      const token = localStorage.getItem("authToken");
-  
-      const response = await fetch("http://localhost:3000/api/story", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: token ? `Bearer ${token}` : undefined,
-        },
-        body: JSON.stringify({
-          decisions: storyState,
-        }),
-      });
-  
-      if (!response.ok) {
-        throw new Error("Failed to save story choices");
-      }
-  
-      console.log("Story saved:", await response.json());
-      alert("Your story decisions have been saved!");
-    } catch (err) {
-      console.error(err);
-      alert("Error saving story decisions.");
-    }
-  }
+  // Move avatar on step change
+  useEffect(() => {
+    const node = mapCoordinates[currentStepId];
+    if (!node) return;
+    setAvatarX(node.x);
+    setAvatarY(node.y);
+  }, [currentStepId]);
+
+  // Save to localStorage
   useEffect(() => {
     localStorage.setItem("storyState", JSON.stringify(storyState));
     localStorage.setItem("storyCurrentStepId", currentStepId);
   }, [storyState, currentStepId]);
 
-  // Simple progress calculation
-  const progressPercent = useMemo(() => {
-    const idx = stepOrder.indexOf(currentStepId);
-    if (idx === -1) return 0;
-    const total = stepOrder.length;
-    return Math.round(((idx + 1) / total) * 100);
-  }, [currentStepId]);
-
-  // Dynamically compute job options depending on education path
+  // Dynamic jobs based on education
   const dynamicOptions = useMemo(() => {
     if (currentStepId !== "jobChoice") return null;
-
     const edu = storyState.educationLevel;
 
-    // If bachelor AND master_yes was chosen → master-level jobs
-    if (edu === "bachelor" && storyState.master === "master_yes") {
+    if (edu === "bachelor" && storyState.master === "master_yes")
       return jobOptionsByEducation.master;
-    }
 
-    // If bachelor without master → bachelor jobs
-    if (edu === "bachelor") {
+    if (edu === "bachelor")
       return jobOptionsByEducation.bachelor;
-    }
 
-    // Apprenticeship
-    if (edu === "apprenticeship") {
+    if (edu === "apprenticeship")
       return jobOptionsByEducation.apprenticeship;
-    }
 
-    // None
-    if (edu === "none") {
-      return jobOptionsByEducation.none;
-    }
-
-    return null;
+    return jobOptionsByEducation[edu] || null;
   }, [currentStepId, storyState]);
 
+  // Handle button press
   function handleOptionSelect(optionId) {
-    // Save the choice in state
-    setStoryState((prev) => {
-      const updated = { ...prev };
+    setStoryState((prev) => ({
+      ...prev,
+      [currentStepId]: optionId,
+    }));
 
-      if (currentStepId === "educationLevel") {
-        updated.educationLevel = optionId;
-      } else if (currentStepId === "bachelorProgram") {
-        updated.bachelorProgram = optionId;
-      } else if (currentStepId === "masterOption") {
-        updated.master = optionId;
-      } else if (currentStepId === "apprenticeshipProgram") {
-        updated.apprenticeshipProgram = optionId;
-      } else if (currentStepId === "jobChoice") {
-        updated.job = optionId;
-      } else if (currentStepId === "childrenChoice") {
-        updated.children = optionId;
-      }
-
-      return updated;
-    });
-
-    // Move to the next step based on config
-    if (step.next) {
-      const nextId = step.next(optionId);
-      if (nextId && storySteps[nextId]) {
-        setCurrentStepId(nextId);
-      }
-    }
+    const nextId = step.next?.(optionId);
+    if (nextId) setCurrentStepId(nextId);
   }
 
   function handleContinue() {
-    if (!step.next) return;
-    const nextId = step.next();
-    if (nextId && storySteps[nextId]) {
-      setCurrentStepId(nextId);
-    }
-  }
-
-  if (!step) {
-    return (
-      <div className="p-4">
-        <p className="text-sm text-red-600">
-          Something went wrong – unknown story step.
-        </p>
-      </div>
-    );
+    const nextId = step.next?.();
+    if (nextId) setCurrentStepId(nextId);
   }
 
   return (
     <div className="flex flex-col gap-6">
-      {/* Simple progress bar */}
+
+      {/* Progress Bar */}
       <div>
         <div className="flex justify-between items-center mb-2">
           <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">
@@ -332,155 +240,91 @@ function Story() {
           </span>
           <span className="text-xs text-gray-500">{progressPercent}%</span>
         </div>
+
         <div className="w-full bg-gray-100 rounded-full h-2 overflow-hidden relative">
-  <div
-    className="h-2 bg-gradient-to-r from-[#589eaf] to-[#94d260] transition-all"
-    style={{ width: `${progressPercent}%` }}
-  />
-  <div className="absolute -top-3 left-0 text-[10px] font-semibold text-[#589eaf]">
-    LVL
-  </div>
-</div>
+          <div
+            className="h-2 bg-gradient-to-r from-[#589eaf] to-[#94d260] transition-all"
+            style={{ width: `${progressPercent}%` }}
+          />
+        </div>
       </div>
 
-{/* Gamified roadmap */}
-<div className="bg-white rounded-2xl shadow-md px-4 py-3 border border-[#589eaf]/10">
-      <div className="relative">
-        {/* Track line */}
-        <div className="absolute top-1/2 left-0 right-0 h-[2px] bg-gray-200" />
+      {/* Roadmap Container */}
+      <div className="relative w-full aspect-video overflow-hidden rounded-2xl shadow-lg border border-[#589eaf]/10 bg-slate-900">
 
-        <div className="relative flex justify-between items-center">
-          {roadmapMilestones.map((milestone, index) => {
-            const isActive = index === currentMilestoneIndex;
-            const isCompleted = index < currentMilestoneIndex;
+        {/* Background Map */}
+        <img
+          src={roadmapImg}
+          alt="Roadmap"
+          className="absolute top-0 left-0 w-[1920px] h-[1080px] object-cover"
+        />
 
-            return (
-              <div
-                key={milestone.id}
-                className="flex flex-col items-center gap-1 w-20"
-              >
-                {/* Node */}
-                <div
-                  className={[
-                    "relative flex items-center justify-center rounded-full h-8 w-8 border-2 bg-white z-10 transition-transform duration-200",
-    isActive ? "scale-110" : "scale-100",
-                    isActive
-                      ? "border-[#589eaf] shadow-md"
-                      : isCompleted
-                      ? "border-[#94d260]"
-                      : "border-gray-300",
-                  ].join(" ")}
-                >
-                  {isActive ? (
-                    <img
-                      src={avatarImg}
-                      alt="Avatar position"
-                      className="h-7 w-7 rounded-full object-cover"
-                    />
-                  ) : (
-                    <span
-                      className={[
-                        "h-2 w-2 rounded-full",
-                        isCompleted
-                          ? "bg-[#94d260]"
-                          : "bg-gray-300",
-                      ].join(" ")}
-                    />
-                  )}
-                </div>
-                {/* Label */}
-                <span className="text-[11px] text-gray-600 text-center">
-                  {milestone.label}
-                </span>
+        {/* Avatar */}
+        <div
+          className="absolute transition-all duration-700 ease-out"
+          style={{
+            left: `${avatarX}px`,
+            top: `${avatarY}px`,
+            transform: "translate(-50%, -100%)",
+          }}
+        >
+          <div className="h-20 w-20 rounded-full bg-[#589eaf]/20 shadow-xl flex items-center justify-center backdrop-blur">
+            <img
+              src={avatarImg}
+              alt="Avatar"
+              className="h-16 w-16 rounded-full object-cover"
+            />
+          </div>
+        </div>
+
+        {/* Popup */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div className="pointer-events-auto bg-white rounded-2xl shadow-2xl p-6 max-w-md w-[90%] border border-[#589eaf]/10">
+            <h2 className="text-2xl font-bold text-[#589eaf] mb-2">
+              {step.title}
+            </h2>
+
+            <p className="text-sm text-gray-600 mb-4">{step.description}</p>
+
+            {step.type !== "info" && (
+              <div className="grid gap-3 md:grid-cols-2">
+                {(step.dynamic ? dynamicOptions : step.options)?.map(
+                  (option) => (
+                    <button
+                      key={option.id}
+                      onClick={() => handleOptionSelect(option.id)}
+                      className="bg-white border border-gray-200 rounded-2xl p-3 shadow-md hover:shadow-xl transition transform hover:-translate-y-1 text-sm"
+                    >
+                      {option.label}
+                    </button>
+                  )
+                )}
               </div>
-            );
-          })}
-        </div>
-      </div>
-    </div>
+            )}
 
-      <div className="grid grid-cols-1 lg:grid-cols-[2fr,1fr] gap-6">
-        {/* Main story card */}
-        <div className="bg-gradient-to-br from-white to-[#f3fafc] rounded-2xl shadow-lg p-6 border border-[#589eaf]/10">
-          <h2 className="text-2xl font-bold text-[#589eaf] mb-2">
-            {step.title}
-          </h2>
-          <p className="text-sm text-gray-600 mb-6">{step.description}</p>
+            {step.type === "info" && (
+              <div className="mt-4">
+                {step.next ? (
+                  <button
+                    onClick={handleContinue}
+                    className="bg-[#589eaf] text-white rounded-xl px-5 py-2.5 font-medium shadow-sm hover:bg-[#4c8b99] transition"
+                  >
+                    Continue
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => alert("Coming soon")}
+                    className="bg-[#94d260] text-white rounded-xl px-5 py-2.5 font-semibold shadow-sm hover:bg-[#7fb952] transition"
+                  >
+                    Finish
+                  </button>
+                )}
+              </div>
+            )}
 
-          {/* Dynamic or static choice-based step */}
-          {step.type !== "info" && (
-  <div className="grid gap-3 md:grid-cols-3">
-    {(step.dynamic ? dynamicOptions : step.options)?.map((option) => (
-      <button
-        key={option.id}
-        onClick={() => handleOptionSelect(option.id)}
-        className="
-          relative text-left bg-white border border-gray-200 
-          rounded-2xl p-4 text-sm 
-          hover:border-[#589eaf] hover:shadow-lg 
-          hover:-translate-y-1 transform transition
-          flex flex-col gap-1
-        "
-      >
-        <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-[#589eaf]/10 text-[#589eaf] mb-1">
-          Choice
-        </span>
-        <div className="font-medium mb-1">{option.label}</div>
-        {/* Placeholder for small impact text (later) */}
-        <p className="text-xs text-gray-500">
-          Select this path to see how your story evolves.
-        </p>
-      </button>
-    ))}
-  </div>
-)}
-
-{step.type === "info" && (
-  <div className="mt-4">
-    {step.next ? (
-      <button
-        onClick={handleContinue}
-        className="
-          inline-flex items-center justify-center
-          bg-[#589eaf] text-white rounded-xl
-          px-5 py-2.5 text-sm font-medium
-          shadow-sm hover:bg-[#4c8b99] transition
-        "
-      >
-        Continue
-      </button>
-    ) : (
-      <button
-        onClick={sendStoryToBackend}
-        className="
-          inline-flex items-center justify-center
-          bg-[#94d260] text-white rounded-xl
-          px-5 py-2.5 text-sm font-semibold
-          shadow-sm hover:bg-[#7fb952] transition
-        "
-      >
-        Save my decisions
-      </button>
-    )}
-  </div>
-)}
-
-         
+          </div>
         </div>
 
-        {/* Avatar fun-fact bubble */}
-        <div className="bg-white rounded-2xl shadow-md p-5 flex flex-col items-center justify-center border border-[#589eaf]/10">
-  <div className="h-24 w-24 rounded-full bg-[#589eaf]/10 flex items-center justify-center mb-4">
-    <img
-      src={avatarImg}
-      alt="Story avatar"
-      className="h-20 w-20 object-cover rounded-full"
-    />
-  </div>
-  <div className="bg-[#589eaf]/10 text-[#589eaf] rounded-2xl px-4 py-3 text-sm text-center shadow-inner">
-    {step.avatarText}
-  </div>
-</div>
       </div>
     </div>
   );
