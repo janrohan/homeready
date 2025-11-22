@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
+
 function KnowledgeBlock({ id, title, children, learned, onToggleLearned, quiz }) {
   const [open, setOpen] = useState(true);
 
@@ -55,7 +56,7 @@ function QuizInline({ q, onComplete, completed }) {
         <input value={answer} onChange={(e) => setAnswer(e.target.value)} className="flex-1 border rounded px-3 py-2 text-sm" />
         <button onClick={check} className="px-4 py-2 bg-slate-900 text-white rounded text-sm">Check</button>
       </div>
-      {result === true && <div className="mt-2 text-sm text-emerald-700">Correct — badge earned!</div>}
+      {result === true && <div className="mt-2 text-sm text-emerald-700">Correct!</div>}
       {result === false && <div className="mt-2 text-sm text-rose-600">Try again.</div>}
     </div>
   );
@@ -117,10 +118,12 @@ function KnowledgePage() {
   }
 
   const badges = useMemo(() => {
+    // Only award the master badge when all quizzes are completed correctly.
+    // This avoids awarding badges prematurely when individual questions are answered.
     const list = [];
-    if (progress === 100) list.push({ id: "master", label: "Knowledge Master" });
-    if (quizzesDone >= 5) list.push({ id: "quizzer", label: "Quiz Whiz" });
-    if (learnedCount >= 3) list.push({ id: "starter", label: "Getting Started" });
+    if (quizzesDone === total && total > 0) {
+      list.push({ id: "master", label: "Knowledge Master" });
+    }
     return list;
   }, [progress, quizzesDone, learnedCount]);
 
