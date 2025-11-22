@@ -5,4 +5,5 @@ class MortgageCalculator {
         this.annualInterestRate = annualInterestRate;
         this.years = years;
     }
+    
 }

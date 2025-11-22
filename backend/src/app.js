@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import routes from "./routes/index.js";
+import mortgageRoutes from "./routes/mortgageRoutes.js";
 
 const devOrigins = ['http://localhost:5173']; // Vite default
 
@@ -22,5 +23,7 @@ app.use("/api", routes);
 
 // root health check
 app.get('/', (req, res) => res.send('API running'));
+
+app.use("/api/mortgage", mortgageRoutes);
 
 export default app;
