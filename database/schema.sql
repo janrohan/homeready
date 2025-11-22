@@ -14,9 +14,12 @@ CREATE TABLE avatars (
     name VARCHAR(100) NOT NULL,
     gender VARCHAR(20),
     age INT,
+    education_level VARCHAR(100),
+    education_field VARCHAR(100),
     occupation VARCHAR(100),
-    income INT,
     savings INT DEFAULT 0,
+    income INT DEFAULT 0,
+    debt INT DEFAULT 0,
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
 
@@ -25,6 +28,7 @@ CREATE TABLE avatar_goals (
     id SERIAL PRIMARY KEY,
     avatar_id INT UNIQUE NOT NULL,
     goal_type VARCHAR(50),
+    region VARCHAR(100),
     rooms INT,
     location VARCHAR(255),
     FOREIGN KEY (avatar_id) REFERENCES avatars(id) ON DELETE CASCADE
