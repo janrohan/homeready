@@ -2,12 +2,12 @@
 import pandas as pd
 from pathlib import Path
 from profiles import generate_avatar
-from property_gen import generate_property
+from property_gen import get_property
 from simulation import simulate_readiness
 
 def generate_sample():
     avatar = generate_avatar()
-    prop = generate_property()
+    prop = get_property()
 
     years_to_readiness = simulate_readiness(
         starting_income=avatar["starting_income"],
@@ -54,4 +54,4 @@ def generate_dataset(n=10000):
 
 
 if __name__ == "__main__":
-    generate_dataset(100)
+    generate_dataset(10000)
