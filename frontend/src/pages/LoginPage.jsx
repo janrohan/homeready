@@ -32,7 +32,9 @@ function LoginPage() {
 
       if (!res.ok) {
         const errBody = await res.json().catch(() => ({}));
-        const message = errBody.message || "Login failed";
+        // backend returns { error: '...' } but some handlers may use { message: '...' }
+        const message = errBody.error || errBody.message || "Login failed";
+        // const message = errBody.message || "Login failed";
         throw new Error(message);
       }
 
