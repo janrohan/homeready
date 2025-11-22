@@ -4,7 +4,7 @@ import auth from "../middleware/auth.middleware.js";
 
 const router = express.Router();
 router.use(auth);
-router.post("/", createAvatarController);
-router.get("/", listAvatarsController);
+router.post("/createAvatar", createAvatarController);
+router.get("/listAvatar", listAvatarsController);
 
 export default router;

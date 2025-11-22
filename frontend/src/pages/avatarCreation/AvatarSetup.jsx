@@ -483,6 +483,44 @@ function AvatarSetup() {
       </div>
     </div>
   );
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    setError("");
+
+    try {
+      const response = await fetch("/api/avatars/createAvatar", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${localStorage.getItem("authToken")}`,
+        },
+        body: JSON.stringify({
+          name, 
+          gender,
+          age: Number(age),
+          education,
+          educationField,
+          occupation,
+          income: Number(income),
+          savings: Number(savings),
+          debt: Number(debt),
+        }),
+      });
+
+      if (!response.ok) {
+        const errBody = await response.json().catch(() => ({}));
+        const message = errBody.error || errBody.message || "Error creating avatar";
+        throw new Error(message);
+      }
+
+      // On success, navigate to next step
+      navigate("/avatar/questions");
+    } catch (error) {
+      setError(error.message);
+    }
+  }
+
 }
 
 export default AvatarSetup;
