@@ -514,6 +514,8 @@ function AvatarSetup() {
         throw new Error(message);
       }
 
+      console.log("Avatar created successfully");
+
       // On success, navigate to next step
       navigate("/avatar/questions");
     } catch (error) {
