@@ -54,4 +54,4 @@ def generate_dataset(n=10000):
 
 
 if __name__ == "__main__":
-    generate_dataset(15000)
+    generate_dataset(100)
