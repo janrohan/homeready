@@ -63,3 +63,11 @@ CREATE TABLE mortgage_eligibility (
     monthly_payment INT,
     FOREIGN KEY (avatar_id) REFERENCES avatars(id) ON DELETE CASCADE
 );
+
+-- STORIES (user decisions / story progress)
+CREATE TABLE stories (
+    id SERIAL PRIMARY KEY,
+    user_id INT REFERENCES users(id) ON DELETE SET NULL,
+    decisions JSONB NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
