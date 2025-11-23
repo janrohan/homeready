@@ -624,12 +624,12 @@ function AvatarSetup() {
         educationField: educationField,
         occupation: occupationCategory,
         income: Number(startingIncome),
-        income_growth_rate: 0.05,
+        incomeGrowthRate: 0.05,
         savings: Number(savings),
-        savings_rate: 0.15, 
+        savingsRate: 0.15, 
         debt: Number(debt),
         propertyPrice: Number(propertyPrice),
-        pricePerSqm: Number(propertyPrice / 80),
+        pricePerSqm: Math.round(Number(propertyPrice / 80)),
         propertyType: propertyType
       }),
     });

@@ -1,4 +1,0 @@
-# Backend is a Node.js (Express) app. There are no Python server dependencies required.
-# If you need Python DB utilities locally, you can use the top-level requirements or add packages here.
-python-dotenv>=1.0.0
-psycopg2-binary>=2.9.6  # optional: for local DB scripts that may use Python

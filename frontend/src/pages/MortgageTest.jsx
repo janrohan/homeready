@@ -26,48 +26,51 @@ export default function MortgageTest() {
           return;
         }
 
+
         const avatarData = await avatarRes.json();
         console.log("Loaded avatar:", avatarData);
 
         const avatar = avatarData.avatar;
 
+        console.log("Avatar keys:", Object.keys(avatar));
+
         const cleaned = {
             age: avatar.age,
             region: avatar.region,
-            educationLevel: avatar.educationLevel,
-            educationField: avatar.educationField,
+            educationLevel: avatar.educationlevel,
+            educationField: avatar.educationfield,
             occupation: avatar.occupation,
             income: avatar.income,
-            incomeGrowthRate: avatar.incomeGrowthRate,
-            savings: avatar.currentSavings,
-            savingsRate: avatar.savingsRate,
-            debtLevel: avatar.debtLevel,
-            propertyPrice: avatar.propertyPrice,
-            pricePerSqm: avatar.pricePerSqm,
-            propertyType: avatar.propertyType,
+            incomeGrowthRate: avatar.incomegrowthrate,
+            savings: avatar.savings,
+            savingsRate: avatar.savingsrate,
+            debtLevel: avatar.debtlevel,
+            propertyPrice: avatar.propertyprice,
+            pricePerSqm: avatar.pricepersqm,
+            propertyType: avatar.propertytype,
             propertyRegion: avatar.region       // region = property_region
-          };
+        };
 
           console.log("PREDICTION PAYLOAD:", cleaned);
 
          //2) POST to mortgage/predict
-        //  const predictRes = await fetch("http://localhost:3000/api/mortgage/predict", {
-        //    method: "POST",
-        //    headers: {
-        //      "Content-Type": "application/json",
-        //    },
-        //    body: JSON.stringify(cleaned),
-        //  });
+         const predictRes = await fetch("http://localhost:3000/api/mortgage/predict", {
+           method: "POST",
+           headers: {
+             "Content-Type": "application/json",
+           },
+           body: JSON.stringify(cleaned),
+         });
 
-        //  if (!predictRes.ok) {
-        //    const body = await predictRes.text();
-        //    setError("Predict failed: " + body);
-        //    return;
-        //  }
+         if (!predictRes.ok) {
+           const body = await predictRes.text();
+           setError("Predict failed: " + body);
+           return;
+         }
 
-        //  const predictData = await predictRes.json();
-        //  console.log("Predict result:", predictData);
-        //  setResult(predictData);
+         const predictData = await predictRes.json();
+         console.log("Predict result:", predictData);
+         setResult(predictData);
 
       } catch (err) {
         console.error(err);
