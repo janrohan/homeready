@@ -18,16 +18,22 @@ export async function createAvatarController(req, res) {
         const payload = {
             userId: user.id,
             name: req.body.name,
-            gender: req.body.gender,
             age: req.body.age,
-            educationLevel: req.body.educationLevel,
-            educationField: req.body.educationField,
-            occupation: req.body.occupation,
+            gender: req.body.gender,
+            region: req.body.region,
+            education_level: req.body.educationLevel,
+            education_field: req.body.educationField,
+            occupation_category: req.body.occupation,
             income: req.body.income,
+            income_growth_rate: req.body.income_growth_rate,
             savings: req.body.savings,
+            savings_rate: req.body.savings_rate,
             debt: req.body.debt,
+            property_price: req.body.propertyPrice,
+            price_per_sqm: req.body.pricePerSqm,
+            property_type: req.body.propertyType
         };
-
+    
         const avatar = await createAvatar(payload);
         res.json(avatar);
     } catch (error) {

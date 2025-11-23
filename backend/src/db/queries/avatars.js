@@ -2,38 +2,54 @@ import db from "../index.js";
 import Avatar from "../../models/Avatar.js";
 
 export async function createAvatar(data) {
-    const text = "INSERT INTO avatars (user_id, name, gender, age, education_level, education_field, occupation, income, savings, debt) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10) RETURNING *";
+    const text = `
+        INSERT INTO avatars (
+            user_id,
+            name,
+            age,
+            gender,
+            region,
+            education_level,
+            education_field,
+            occupation_category,
+            income,
+            income_growth_rate,
+            savings,
+            savings_rate,
+            debt,
+            property_price,
+            price_per_sqm,
+            property_type
+        ) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16)
+        RETURNING *
+        `;
+
         const params = [
             data.userId,
             data.name,
-            data.gender || null,
-            data.age || null,
-            // accept either camelCase or snake_case keys
-            data.education || data.educationLevel || null,
-            data.educationField || null,
-            data.occupation || null,
-            // income: support monthly or annual? use provided numeric value
-            (data.income != null ? data.income : (data.startingIncome != null ? data.startingIncome : 0)),
-            data.savings || 0,
-            data.debt || 0,
+            data.age,
+            data.gender,
+            data.region,
+            data.education_level,
+            data.education_field,
+            data.occupation_category,
+            data.income,
+            data.income_growth_rate,
+            data.savings,
+            data.savings_rate,
+            data.debt,
+            data.property_price,
+            data.price_per_sqm,
+            data.property_type
         ];
-
-        if (process.env.NODE_ENV !== 'production') {
-            try {
-                console.debug('[queries.createAvatar] SQL:', text);
-                console.debug('[queries.createAvatar] params:', params);
-            } catch (e) {
-                console.debug('[queries.createAvatar] failed to log SQL or params');
-            }
-        }
 
         try {
             const res = await db.query(text, params);
             return new Avatar(res.rows[0]);
-        } catch (err) {
-            console.error('[queries.createAvatar] DB error:', err && err.stack ? err.stack : err);
+          } catch (err) {
+            console.error("[queries.createAvatar] DB error:", err);
             throw err;
-        }
+          }
 }
 
 export async function getAvatarsByUser(user_id) {

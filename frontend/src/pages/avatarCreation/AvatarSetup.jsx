@@ -617,14 +617,20 @@ function AvatarSetup() {
       },
       body: JSON.stringify({
         name: name,
-        gender: gender,
         age: Number(age),
+        gender: gender,
+        region: region,
         educationLevel: educationLevel,
         educationField: educationField,
         occupation: occupationCategory,
         income: Number(startingIncome),
+        income_growth_rate: 0.05,
         savings: Number(savings),
+        savings_rate: 0.15, 
         debt: Number(debt),
+        propertyPrice: Number(propertyPrice),
+        pricePerSqm: Number(propertyPrice / 80),
+        propertyType: propertyType
       }),
     });
 
