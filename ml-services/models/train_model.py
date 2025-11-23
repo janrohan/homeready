@@ -45,11 +45,11 @@ categorical_cols = [
 
 numeric_cols = [
     "age",
-    "starting_income",
+    "income",
     "income_growth_rate",
-    "current_savings",
+    "savings",
     "savings_rate",
-    "debt_level",
+    "debt",
     "property_price",
     "price_per_sqm"
 ]

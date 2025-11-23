@@ -1,4 +1,5 @@
 import { createAvatar, getAvatarsForUser } from "../services/avatar.service.js";
+import * as avatarQueries from "../db/queries/avatars.js";
 
 export async function createAvatarController(req, res) {
     try {
@@ -21,17 +22,17 @@ export async function createAvatarController(req, res) {
             age: req.body.age,
             gender: req.body.gender,
             region: req.body.region,
-            education_level: req.body.educationLevel,
-            education_field: req.body.educationField,
-            occupation_category: req.body.occupation,
+            educationLevel: req.body.educationLevel,
+            educationField: req.body.educationField,
+            occupation: req.body.occupation,
             income: req.body.income,
-            income_growth_rate: req.body.income_growth_rate,
+            incomeGrowthRate: req.body.incomeGrowthRate,
             savings: req.body.savings,
-            savings_rate: req.body.savings_rate,
-            debt: req.body.debt,
-            property_price: req.body.propertyPrice,
-            price_per_sqm: req.body.pricePerSqm,
-            property_type: req.body.propertyType
+            savingsRate: req.body.savingsRate,
+            debtLevel: req.body.debt,
+            propertyPrice: req.body.propertyPrice,
+            pricePerSqm: req.body.pricePerSqm,
+            propertyType: req.body.propertyType
         };
     
         const avatar = await createAvatar(payload);
@@ -54,3 +55,20 @@ export async function listAvatarsController(req, res) {
         res.status(500).json({ error: "Error fetching avatars" });
     }
 }
+
+export async function getLatestAvatarController(req, res) {
+    try {
+      const user = req.user; // from auth middleware
+      if (!user) return res.status(401).json({ error: "Unauthorized" });
+  
+      const avatars = await avatarQueries.getLatestAvatarByUser(user.id);
+      if (!avatars) {
+        return res.status(404).json({ error: "No avatar found for user" });
+      }
+  
+      res.json({ success: true, avatar: avatars });
+    } catch (err) {
+      console.error("[getLatestAvatarController] error:", err);
+      res.status(500).json({ error: "Server error retrieving avatar" });
+    }
+  }

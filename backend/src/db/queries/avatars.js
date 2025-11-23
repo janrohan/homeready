@@ -9,17 +9,17 @@ export async function createAvatar(data) {
             age,
             gender,
             region,
-            education_level,
-            education_field,
-            occupation_category,
+            educationLevel,
+            educationField,
+            occupation,
             income,
-            income_growth_rate,
+            incomeGrowthRate,
             savings,
-            savings_rate,
-            debt,
-            property_price,
-            price_per_sqm,
-            property_type
+            savingsRate,
+            debtLevel,
+            propertyPrice,
+            pricePerSqm,
+            propertyType
         ) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16)
         RETURNING *
         `;
@@ -30,17 +30,17 @@ export async function createAvatar(data) {
             data.age,
             data.gender,
             data.region,
-            data.education_level,
-            data.education_field,
-            data.occupation_category,
+            data.educationLevel,
+            data.educationField,
+            data.occupation,
             data.income,
-            data.income_growth_rate,
+            data.incomeGrowthRate,
             data.savings,
-            data.savings_rate,
-            data.debt,
-            data.property_price,
-            data.price_per_sqm,
-            data.property_type
+            data.savingsRate,
+            data.debtLevel,
+            data.propertyPrice,
+            data.pricePerSqm,
+            data.propertyType
         ];
 
         try {
@@ -66,3 +66,11 @@ export async function getAllAvatars() {
     );
     return res.rows;
 }
+
+export async function getLatestAvatarByUser(user_id) {
+    const res = await db.query(
+      "SELECT * FROM avatars WHERE user_id = $1 ORDER BY id DESC LIMIT 1",
+      [user_id]
+    );
+    return res.rows[0] || null;
+  }

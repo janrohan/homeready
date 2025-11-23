@@ -11,6 +11,7 @@ import KnowledgePage from "./pages/KnowledgePage.jsx";
 import AvatarSetup from "./pages/avatarCreation/AvatarSetup.jsx";
 import HandleFinish from "./pages/avatarCreation/HandleFinish.jsx";
 import RegisterPage from "./pages/RegisterPage.jsx";
+import MortgageTest from "./pages/MortgageTest.jsx";
 
 function App() {
   const token = localStorage.getItem("authToken");
@@ -58,6 +59,8 @@ function App() {
             </AuthLayout>
           }
         />
+
+        <Route path="/mortgage-test" element={<MortgageTest />} />
 
         {/* Main app */}
         <Route path="/app" element={<MainLayout />}>
